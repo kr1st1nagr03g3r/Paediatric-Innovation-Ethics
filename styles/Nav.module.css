@@ -1,0 +1,35 @@
+/* .link = Nav links without a dropdown */
+.link {
+  color: white;
+}
+
+/* The individual spans holding the nav links */
+.span {
+    display: block;
+    position: relative;
+}
+
+/* .link>.span {
+    padding: 0px;
+} */
+
+.bar {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 100px;
+  color: white;
+  letter-spacing: 6px;
+} 
+
+.detaillink {
+    color: white;
+}
