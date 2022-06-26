@@ -29,7 +29,7 @@ class Navigation extends React.Component {
 
 
             <div className={styles.navbar}>
-                <h1 className="text-[100px] font-bold text-white">PBT</h1>
+                <h1 className="text-[100px] font-bold text-white logo pr-[30px]">PBT</h1>
                 <a href="#home">HOME</a>
                 <a href="#research">RESEARCH</a>
                 <div className={styles.dropdown}>

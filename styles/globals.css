@@ -21,8 +21,13 @@ a {
   text-decoration: none;
 }
 
+.containerGlobal {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* TODO: figure out how to target Contextual selectors outside of globals.css */
-details>summary {
+/* details>summary {
   list-style: none;
 }
 
@@ -44,5 +49,5 @@ summary {
 details {
   height: 150px;
   margin-top: 126px;
-}
+} */
 
