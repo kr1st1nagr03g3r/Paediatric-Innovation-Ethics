@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
 }
@@ -24,6 +23,43 @@ a {
 .containerGlobal {
   width: 960px;
   margin: 0 auto;
+}
+
+/* this project owner is not concerned about google ranking or seo, so this is an h2 instead of an h1 */
+
+.title,
+.subtitle,
+.para,
+.legal {
+  text-align: center;
+  font-family: Nunito;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 40px;
+  padding: 30px 0px;
+
+}
+
+.subtitle {
+  font-size: 30px;
+  padding: 60px 0px 30px 0px;
+  font-weight: 700;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.legal {
+  padding: 60px 0px;
+  font-size: 12px;
+  font-weight: 100;
+  color: red;
 }
 
 /* TODO: figure out how to target Contextual selectors outside of globals.css */
@@ -50,4 +86,3 @@ details {
   height: 150px;
   margin-top: 126px;
 } */
-
