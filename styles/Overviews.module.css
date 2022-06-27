@@ -1,0 +1,32 @@
+.body {
+  background-color: #00a122;
+}
+
+/* this will style the span of the Next.Image */
+.hero > span {
+  position: relative;
+  height: 452px;
+  position: relative;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.hero > span > span {
+    padding-bottom: 0px !important;
+}
+
+.hero {
+  position: relative;
+  padding: 0px;
+}
+
+.text {
+  background-color: #00a122;
+  margin-top: 50px;
+  position: relative;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}

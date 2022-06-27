@@ -37,20 +37,23 @@ a {
   letter-spacing: 0.5px;
 }
 
-.title {
+.title,
+h2 {
   font-size: 36px;
   line-height: 40px;
   padding: 30px 0px;
 
 }
 
-.subtitle {
+.subtitle,
+h3 {
   font-size: 30px;
   padding: 60px 0px 30px 0px;
   font-weight: 700;
 }
 
-.para {
+.para,
+p {
   font-size: 20px;
   font-weight: 300;
 }
@@ -60,6 +63,10 @@ a {
   font-size: 12px;
   font-weight: 100;
   color: red;
+}
+
+.bolder {
+  font-weight: 800;
 }
 
 /* TODO: figure out how to target Contextual selectors outside of globals.css */
