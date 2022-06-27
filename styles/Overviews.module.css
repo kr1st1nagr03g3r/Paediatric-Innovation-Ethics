@@ -5,7 +5,7 @@
 /* this will style the span of the Next.Image */
 .hero > span {
   position: relative;
-  height: 452px;
+  height: 418px;
   position: relative;
   margin-top: 0px;
   padding: 0px;
@@ -22,7 +22,7 @@
 
 .text {
   background-color: #00a122;
-  margin-top: 50px;
+  margin-top: -10px;
   position: relative;
   padding: 60px 0px;
   display: flex;
