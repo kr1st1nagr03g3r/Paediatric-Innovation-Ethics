@@ -1,32 +1,30 @@
-.body {
-  background-color: #00a122;
-}
-
-/* this will style the span of the Next.Image */
-.hero > span {
-  position: relative;
-  height: 418px;
-  position: relative;
-  margin-top: 0px;
-  padding: 0px;
-}
-
-.hero > span > span {
-    padding-bottom: 0px !important;
-}
-
 .hero {
-  position: relative;
-  padding: 0px;
+z-index: 0;
 }
 
-.text {
-  background-color: #00a122;
-  margin-top: -10px;
-  position: relative;
-  padding: 60px 0px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+.road {
+height: 10px;
+width: 100%;
+z-index: 1;
+bottom: 220px;
+position: absolute;
+background-size: 10px 1px;
 }
+
+.arrows > span {
+position: absolute;
+z-index: 2;
+cursor: pointer;
+
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    top: 300px;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+  }
