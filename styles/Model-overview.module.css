@@ -1,0 +1,55 @@
+
+
+.sky {
+  height: 252px;
+  background-color: #6ad6e4;
+}
+
+.grass {
+  height: 120px;
+  background-color: #00A122;
+}
+
+.road {
+    height: 80px;
+    color: #4d4d4d;
+} 
+
+.carousel {
+/* place our nav buttons in the bottom center */
+position: relative;
+height: 300px;
+}
+
+.item {
+height: 100%;
+background-color: pink;
+}
+
+.itemSelected {
+  display: block;
+}
+
+.carouselNav {
+width: 100%;
+padding: 20px 0;
+/* interacts with position relative */
+position: absolute;
+bottom: 0;
+left: 0;
+text-align: center;
+}
+
+.carouselButton {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carouselButtonSelected {
+  background: rgba(255, 255, 255, 0.5);
+}
