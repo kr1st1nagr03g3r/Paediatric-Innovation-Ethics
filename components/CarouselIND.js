@@ -1,4 +1,4 @@
-import Images from '../public/images/03preClinical/index.js'
+import Images from '../public/images/04IND/index.js'
 import Image from 'next/image.js'
 import styles from '/styles/Carousel.module.css'
 import React from 'react'
@@ -17,15 +17,15 @@ const CarouselDDPC = () => {
             <Clouds />
 
             <span className={styles.title}>
-                <div className={styles.PCdot}>  </div>
-                <h2 className={styles.h2}>Pre-Clinical</h2>
+                <div className={styles.INDdot}>  </div>
+                <h2 className={styles.h2}>IND</h2>
             </span>
 
 
             {/* BARRIERS */}
             <div className={styles.imagesTop}>
-                <Link href="#CRO">
-                    <Image src={Images.PCCRO} alt="" />
+                <Link href="#regagency">
+                    <Image src={Images.INDRegA} alt="" />
                 </Link>
 
 
@@ -37,14 +37,11 @@ const CarouselDDPC = () => {
             {/* ROADBLOCKS */}
             <div className={styles.imagesBottom}>
 
-                <Link href="#hurdles">
-                    <Image src={Images.PCBHurdles} alt="" />
-                </Link>
-
                 <Link href="#research">
-                    <Image src={Images.PCResearch} alt="" />
+                    <Image src={Images.INDBHurdles} alt="" />
                 </Link>
 
+  
 
 
 
@@ -62,7 +59,7 @@ const CarouselDDPC = () => {
             {/* ROAD */}
 
             <div className={styles.road}>
-                <Image layout="fill" objectFit="cover" src={Images.PCRoad} alt="" />
+                <Image layout="fill" objectFit="cover" src={Images.INDRoad} alt="" />
             </div>
 
 

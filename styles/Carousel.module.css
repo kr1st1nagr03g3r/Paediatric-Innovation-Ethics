@@ -140,3 +140,24 @@ margin-right: 30px;
   z-index: 20;
   border-radius: 50%;
 }
+
+.PCdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
+  background: #F2DE21;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+}
+
+.INDdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
+  background: #3FB5DC;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+  border: 1px solid darkgrey;
+}
