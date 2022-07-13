@@ -7,21 +7,70 @@ import Link from 'next/link.js'
 import RedRoad from '../public/images/01drugDiscovery/redRoad.svg'
 import ArrowLeft from '../public/images/arrowLeft.png'
 import ArrowRight from '../public/images/arrowRight.png'
+import Clouds from '../components/Clouds'
 
 
 const CarouselDD = () => {
   return (
 
-    <div style={{ height: '450px' }}>
+    <div style={{ height: '490px' }}>
+
+<Clouds />
+
+<span className={styles.title}>
+                <div className={styles.DDdot}>  </div>
+                <h2 className={styles.h2}>Drug Discovery</h2>
+            </span>
+
+      {/* BARRIERS */}
+      <div className={styles.imagesTop}>
+        <Link href="#fundingAgency">
+          <Image src={Images.redFundingAgency} alt="" />
+        </Link>
+
+        <Link href="#TTO">
+          <Image src={Images.redTTO} alt="" />
+        </Link>
 
 
+        {/* <div className="next">
+          <Image src={Images.ghostUniversity} alt="" />
+        </div> */}
 
 
-      {/* IMAGES */}
-      <div className={styles.imagesAll}>
-        <Image src={Images.redFundingAgency} alt="" />
-        <Image src={Images.redTTO} alt="" />
       </div>
+
+      {/* ROADBLOCKS */}
+      <div className={styles.imagesBottom}>
+        <Link href="#humanCapital">
+          <Image src={Images.shadedHumanCapital} alt="" />
+        </Link>
+
+        <Link href="#bureaucraticHurdles">
+          <Image src={Images.shadedStopSign} alt="" />
+        </Link>
+
+
+        <Link href="#basicScience">
+          <Image src={Images.shadedBasicScience} alt="" />
+        </Link>
+
+        <Link href="#dataSharing">
+          <Image src={Images.shadedPylons} alt="" />
+        </Link>
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
 
       {/* ROAD */}
 
@@ -34,12 +83,14 @@ const CarouselDD = () => {
 
       {/* ARROWS */}
       <div className={styles.arrows}>
-        <Link href="https://checkboxrace.com/">
+        <Link href="/model-overview/manufacturing-distributing">
           <Image src={ArrowLeft} alt="" />
         </Link>
-        <Link href="https://checkboxrace.com/">
+        <Link href="/model-overview/drug-discovery-pre-clinical">
           <Image src={ArrowRight} alt="" />
         </Link>
+
+
       </div>
 
 
@@ -47,8 +98,10 @@ const CarouselDD = () => {
 
 
 
+
+
       <div style={{ height: '265px', background: '#6AD6E4' }}></div>
-      <div style={{ height: '110px', background: '#00A122' }}></div>
+      <div style={{ height: '150px', background: '#00A122' }}></div>
 
 
 
