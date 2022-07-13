@@ -4,25 +4,57 @@ import styles from '/styles/Carousel.module.css'
 import React from 'react'
 import Link from 'next/link.js'
 // images
-import DDsubnav from '../public/images/01drugDiscovery/DDsubnav.svg'
 import RedRoad from '../public/images/01drugDiscovery/redRoad.svg'
 import ArrowLeft from '../public/images/arrowLeft.png'
 import ArrowRight from '../public/images/arrowRight.png'
 
+
 const CarouselDD = () => {
   return (
-    <div className="w-full">
-      <Image className={styles.hero} layout="responsive" src={DDsubnav} alt="" />
+
+    <div style={{ height: '450px' }}>
+
+
+
+
+      {/* IMAGES */}
+      <div className={styles.imagesAll}>
+        <Image src={Images.redFundingAgency} alt="" />
+        <Image src={Images.redTTO} alt="" />
+      </div>
+
+      {/* ROAD */}
+
       <div className={styles.road}>
-        <Image layout="responsive" src={RedRoad} alt="" />
+        <Image layout="fill" objectFit="cover" src={RedRoad} alt="" />
       </div>
+
+
+
+
+      {/* ARROWS */}
       <div className={styles.arrows}>
-      <Link href="https://www.google.ca">
-      <Image src={ArrowLeft} alt="" />
-      </Link>
-      <Image src={ArrowRight} alt="" />
+        <Link href="https://checkboxrace.com/">
+          <Image src={ArrowLeft} alt="" />
+        </Link>
+        <Link href="https://checkboxrace.com/">
+          <Image src={ArrowRight} alt="" />
+        </Link>
       </div>
+
+
+
+
+
+
+      <div style={{ height: '265px', background: '#6AD6E4' }}></div>
+      <div style={{ height: '110px', background: '#00A122' }}></div>
+
+
+
+
     </div>
+
   )
 }
 
