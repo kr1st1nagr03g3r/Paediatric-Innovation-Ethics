@@ -67,10 +67,10 @@ const CarouselDDPC = () => {
 
             {/* ARROWS */}
             <div className={styles.arrows}>
-                <Link href="/model-overview/drug-discovery-pre-clinical">
+                <Link href="/model-overview/pre-clinical">
                     <Image src={ArrowLeft} alt="" />
                 </Link>
-                <Link href="/model-overview/ind">
+                <Link href="/model-overview/clinical-trials">
                     <Image src={ArrowRight} alt="" />
                 </Link>
 

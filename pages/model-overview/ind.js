@@ -8,7 +8,7 @@ import CarouselIND from '../../components/CarouselIND';
 import Card from '../../components/Card'
 import Images from '../../public/images/04IND/index.js'
 
-class PreClinical extends React.PureComponent {
+class IND extends React.PureComponent {
     state = {}
     render() {
         return (
@@ -52,4 +52,4 @@ class PreClinical extends React.PureComponent {
     }
 }
 
-export default PreClinical;
+export default IND;

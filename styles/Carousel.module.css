@@ -33,6 +33,19 @@
   cursor: pointer;
 }
 
+.imagesTopCT {
+  position: absolute;
+  top: 267px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
 .imagesBottom {
   position: absolute;
   top: 530px;
@@ -160,4 +173,18 @@ margin-right: 30px;
   z-index: 20;
   border-radius: 50%;
   border: 1px solid darkgrey;
+}
+
+.CTdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
+  background: #912AF4;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+}
+
+.phases {
+font-size: 2rem;
 }
