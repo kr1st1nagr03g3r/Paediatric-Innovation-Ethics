@@ -23,7 +23,7 @@ class Drugdiscovery extends React.PureComponent {
                 </div>
 
                 <Card>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="fundingAgency" className="basis-1/4 justify-center align-center content-center flex" >
                         <Image src={ Images.redFundingAgency } height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
@@ -33,7 +33,7 @@ class Drugdiscovery extends React.PureComponent {
 
 
                 <Card>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="TTO" className="basis-1/4 justify-center align-center content-center flex" >
                         <Image src={ Images.redTTO } height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
@@ -42,7 +42,7 @@ class Drugdiscovery extends React.PureComponent {
                 </Card>
 
                 <Card>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="humanCapital" className="basis-1/4 justify-center align-center content-center flex">
                         <Image src={ Images.redHumanCapital } height="100" width="100" alt="" /></div>
                     <div className="basis-3/4">
                         <p><b className="bolder">Human Capital</b>: Human capital refers to the individual expertise and skills understood to be invaluable for a particular organization or endeavor. In the drug discovery stage, this refers to the institutional ability to hire and retain excellent scientists (including graduate students, post-doctoral researchers, faculty, and lab techs), as well as the ability to execute necessary non-scientific work (e.g. reviewing contracts and IP filings at TTOs). Human capital also includes human subject volunteers who participate in clinical trials.</p>
@@ -50,7 +50,7 @@ class Drugdiscovery extends React.PureComponent {
                 </Card>
 
                 <Card>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="bureaucraticHurdles" className="basis-1/4 justify-center align-center content-center flex">
                         <Image src={ Images.redBeurocraticHurdles } width="60" height="60" alt=""  />
                     </div>
                     <div className="basis-3/4">
@@ -60,7 +60,7 @@ class Drugdiscovery extends React.PureComponent {
                 </Card>
 
                 <Card>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="basicScience" className="basis-1/4 justify-center align-center content-center flex">
                         <Image src={ Images.redBasicScience } width="100" height="100" alt="" />
                     </div>
                     <div className="basis-3/4">
@@ -69,7 +69,7 @@ class Drugdiscovery extends React.PureComponent {
                 </Card>
 
                 <CardLast>
-                    <div className="basis-1/4 justify-center align-center content-center flex">
+                    <div id="dataSharing" className="basis-1/4 justify-center align-center content-center flex">
                         <Image width="100" height="100" alt="" src="https://raw.githubusercontent.com/kr1st1nagr03g3r/Let-s-Make-Burgers/a1647d5f7799390dbafc9856a626724f8daabcdc/public/images/01drugDiscovery/redDataSharingPylons.svg" />
                     </div>
                     <div className="basis-3/4">

@@ -20,12 +20,12 @@ class Navigation extends React.Component {
                     </Link>
                     <div className={styles.dropdowncontent}>
                         <Link href="/model-overview/drug-discovery">DRUG DISCOVERY</Link>
-                        <Link href="/model-overview/drug-discovery">DRUG DISCOVERY / PRE-CLINICAL</Link>
-                        <Link href="/model-overview/drug-discovery">PRE-CLINICAL</Link>
-                        <Link href="/model-overview/drug-discovery">IND</Link>
-                        <Link href="/model-overview/drug-discovery">CLINICAL TRIALS</Link>
-                        <Link href="/model-overview/drug-discovery">NDA</Link>
-                        <Link href="/model-overview/drug-discovery">MANUFACTURING AND DISTRIBUTING</Link>
+                        <Link href="/model-overview/drug-discovery-pre-clinical">DRUG DISCOVERY / PRE-CLINICAL</Link>
+                        <Link href="/model-overview/pre-clinical">PRE-CLINICAL</Link>
+                        <Link href="/model-overview/ind">IND</Link>
+                        <Link href="/model-overview/clinical-trials">CLINICAL TRIALS</Link>
+                        <Link href="/model-overview/nda">NDA</Link>
+                        <Link href="/model-overview/manufacturing-distributing">MANUFACTURING AND DISTRIBUTING</Link>
                     </div>
                 </div>
                 <Link href="/contact">CONTACT</Link>

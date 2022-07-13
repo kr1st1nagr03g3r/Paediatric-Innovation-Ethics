@@ -8,7 +8,8 @@ redTTO: require('../01drugDiscovery/redTTO.svg').default,
 redFundingAgency: require('../01drugDiscovery/redFundingAgency.svg').default,
 redDataSharingPylons: require('../01drugDiscovery/redDataSharingPylons.svg').default,
 redBeurocraticHurdles: require('../01drugDiscovery/redBeurocraticHurdles.svg').default,
-redBasicScience: require('../01drugDiscovery/redBasicScience.svg').default
+redBasicScience: require('../01drugDiscovery/redBasicScience.svg').default,
+ghostUniversity: require('../01drugDiscovery/ghostUniversity.svg').default,
 }
 
 export default Images
