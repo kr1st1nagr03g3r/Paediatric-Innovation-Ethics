@@ -1,30 +1,33 @@
-.hero {
-z-index: 0;
+.arrows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  margin-top: 200px;
+  padding: 0px 60px;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .road {
-height: 10px;
-width: 100%;
-z-index: 1;
-bottom: 220px;
-position: absolute;
-background-size: 10px 1px;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 5px;
+  top: 560px;
 }
 
-.arrows > span {
-position: absolute;
-z-index: 2;
-cursor: pointer;
-
+.imagesAll {
+  position: absolute;
+  top: 340px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 1280px;
+  display: flex;
 }
-
-.arrows {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    top: 300px;
-    position: absolute;
-    height: 20px;
-    width: 100%;
-  }
