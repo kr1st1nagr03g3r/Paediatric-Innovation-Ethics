@@ -9,7 +9,10 @@ class Navigation extends React.Component {
         return (
 
             <div className={styles.navbar}>
+            <div className={styles.logo}>
                 <h1 className="text-[100px] font-bold text-white logo pr-[30px]">PBT</h1>
+                </div>
+            <div className={styles.navContent}>
                 <Link href="/">HOME</Link>
                 <Link href="/research">RESEARCH</Link>
                 <div className={styles.dropdown}>
@@ -29,6 +32,7 @@ class Navigation extends React.Component {
                     </div>
                 </div>
                 <Link href="/contact">CONTACT</Link>
+                </div>
             </div>
 
 

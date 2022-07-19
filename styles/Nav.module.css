@@ -87,7 +87,7 @@
     background-color: #ddddddeb;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.95);
-    z-index: 1;
+    z-index: 100;
     border-radius: 20px;
     padding: 10px;
   }
@@ -112,4 +112,13 @@
   .fa {
     content: "▼";
     color: white;
+  }
+
+  /* 808px is the width where the nav begins to crumple */
+
+  @media only screen and (max-width: 808px) {
+.navbar {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
   }
