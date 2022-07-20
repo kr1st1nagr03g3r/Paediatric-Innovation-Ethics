@@ -33,7 +33,7 @@ a {
 .legal {
   text-align: center;
   font-family: Nunito;
-  color: white;
+  color: ghostwhite;
   letter-spacing: 0.5px;
 }
 
@@ -62,7 +62,7 @@ p {
   padding: 60px 0px;
   font-size: 12px;
   font-weight: 100;
-  color: red;
+  color: ghostghostwhite;
 }
 
 .bolder {

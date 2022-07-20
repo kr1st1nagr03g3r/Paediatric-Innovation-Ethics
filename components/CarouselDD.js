@@ -15,12 +15,12 @@ const CarouselDD = () => {
 
     <div style={{ height: '490px' }}>
 
-<Clouds />
+      <Clouds />
 
-<span className={styles.title}>
-                <div className={styles.DDdot}>  </div>
-                <h2 className={styles.h2}>Drug Discovery</h2>
-            </span>
+      <span className={styles.title}>
+        <div className={styles.DDdot}>  </div>
+        <h2 className={styles.h2}>Drug Discovery</h2>
+      </span>
 
       {/* BARRIERS */}
       <div className={styles.imagesTop}>

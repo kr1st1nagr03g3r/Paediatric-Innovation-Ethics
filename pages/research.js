@@ -6,8 +6,7 @@ import Images from '../public/images/research/index.js'
 import styles from "../styles/Research.module.css"
 import Box from '@mui/system/Box'
 import Container from '@mui/system/Container'
-// IMAGES
-import Red from '../public/images/01drugDiscovery/redFundingAgency.svg'
+
 
 const Research = () => {
   return (
@@ -30,34 +29,84 @@ const Research = () => {
             <Image src={Images.researchBackground} alt="green grass background for many buildings" require={true} />
             <table>
               <tbody>
+
+
                 <tr>
                   <td>content</td>
-                  <td>content</td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.redTTO} alt="" require={true} />
+                    </div></td>
                   <td>content</td>
                   <td >
                     <div className={styles.wrapper}>
-                      <Image src={Red} alt="red funding agency building" require={true} />
+                      <Image src={Images.redFundingAgency} alt="" require={true} />
+                    </div>
+                  </td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.DDPCRegAgency} alt="" require={true} />
+                    </div></td>
+                </tr>
+
+
+                <tr>
+                  <td>content</td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.INDRegA} alt="" require={true} />
+                    </div>
+
+                  </td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.DDPCUni} alt="" require={true} />
+                    </div>
+                  </td>
+                  <td>
+
+                    <div className={styles.wrapper}>
+                      <Image src={Images.PCCRO} alt="" require={true} />
+                    </div>
+                  </td>
+                  <td>
+
+                    <div className={styles.wrapper}>
+                      <Image src={Images.DDPCCRO} alt="" require={true} />
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>content</td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTRegA} alt="" require={true} />
+                    </div>
+
+                  </td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTIndustry} alt="" require={true} />
+                    </div>
+                  </td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTCRO} alt="" require={true} />
                     </div>
                   </td>
                   <td>content</td>
                 </tr>
+
+
+
                 <tr>
                   <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                </tr>
-                <tr>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                </tr>
-                <tr>
-                  <td>content</td>
-                  <td>content</td>
+                  <td>
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTAMC} alt="" require={true} />
+                    </div>
+                  </td>
                   <td>content</td>
                   <td>content</td>
                   <td>content</td>
