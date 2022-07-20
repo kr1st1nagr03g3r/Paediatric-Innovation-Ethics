@@ -6,6 +6,7 @@ import Images from '../public/images/research/index.js'
 import styles from "../styles/Research.module.css"
 import Box from '@mui/system/Box'
 import Container from '@mui/system/Container'
+import Tooltip from '../components/Tooltip'
 
 
 const Research = () => {
@@ -26,97 +27,209 @@ const Research = () => {
 
         <Container fixed className={styles.research}>
           <Box className={styles.wrapper}>
-            <Image src={Images.researchBackground} alt="green grass background for many buildings" require={true} />
+            <Image src={Images.researchBackground} alt="green grass background for many buildings" />
             <table>
               <tbody>
+                <style jsx>{`
+td#one {
+width: 168px;
+}
 
+td#two {
+  margin-top: 54px;
+}
 
+td#three {
+  width: 113px;
+}
+
+td#four {
+    margin-right: 15px;
+    margin-bottom: 85px;
+}
+
+td#five {
+margin-top: 70px;
+}
+
+td#seven {
+  margin-right: 601px;
+}
+
+td#eight {
+  position: absolute;
+      top: 240px;
+}
+
+td#nine {
+  position: absolute;
+ top: 295px;
+   right: 126px;
+}
+
+td#ten {
+      position: absolute;
+    top: 220px;
+    right: -29px;
+}
+
+td#eleven {
+  margin-top: 129px;
+}
+
+td#fourteen {
+       margin-left: 53px;
+           margin-top: 190px;
+}
+
+td#sixteen {
+      width: 390px;
+}
+
+td#eighteen {
+  width: 0px;
+}
+
+td#nineteen {
+  width: 0px;
+}
+
+td#twenty {
+margin-left: 163px;
+}
+
+td#twentyone {
+  width: 189px;
+}
+
+td#twentytwo {
+      margin-top: -256px;
+      margin-right: -200px;
+}
+
+td#twentythree {
+  padding-top: 290px;
+}
+
+td#twentyfour {
+  margin-top: 240px;
+margin-left: 252px;
+}
+  }
+      `}</style>
+
+                {/* ROW ONE */}
                 <tr>
-                  <td>content</td>
-                  <td>
+                  <td id="one"></td>
+                  <td id="two" >
+
                     <div className={styles.wrapper}>
-                      <Image src={Images.redTTO} alt="" require={true} />
+                      {/* <Tooltip><p>Hello</p></Tooltip> */}
+                      <Image src={Images.redTTO} alt="" />
                     </div></td>
-                  <td>content</td>
-                  <td >
+                  <td id="three"></td>
+                  <td id="four">
                     <div className={styles.wrapper}>
-                      <Image src={Images.redFundingAgency} alt="" require={true} />
+                      <Image src={Images.redFundingAgency} alt="" />
                     </div>
                   </td>
-                  <td>
+                  <td id="five">
                     <div className={styles.wrapper}>
-                      <Image src={Images.DDPCRegAgency} alt="" require={true} />
+                      <Image src={Images.DDPCRegAgency} alt="" />
                     </div></td>
                 </tr>
 
+                {/* ROW TWO */}
+                <tr>
+                  <td id="six"></td>
+                  <td id="seven">
+                    <div className={styles.wrapper}>
+                      <Image src={Images.INDRegA} alt="" />
+                    </div>
+
+                  </td>
+                  <td id="eight">
+                    <div className={styles.wrapper}>
+                      <Image src={Images.DDPCUni} alt="" />
+                    </div>
+                  </td>
+                  <td id="nine">
+
+                    <div className={styles.wrapper}>
+                      <Image src={Images.PCCRO} alt="" />
+                    </div>
+                  </td>
+                  <td id="ten">
+
+                    <div className={styles.wrapper}>
+                      <Image src={Images.DDPCCRO} alt="" />
+                    </div>
+                  </td>
+                </tr>
+                {/* ROW THREE */}
+                <tr>
+                  <td id="eleven"></td>
+                  <td id="twelve">
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTRegA} alt="" />
+                    </div>
+
+                  </td>
+                  <td id="thirteen">
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTIndustry} alt="" />
+                    </div>
+                  </td>
+                  <td id="fourteen">
+                    <div className={styles.wrapper}>
+                      <Image src={Images.CTCRO} alt="" />
+                    </div>
+                  </td>
+                  <td id="fifteen"></td>
+                </tr>
+
+
 
                 <tr>
-                  <td>content</td>
-                  <td>
+                  <td id="sixteen"></td>
+                  <td id="seventeen">
                     <div className={styles.wrapper}>
-                      <Image src={Images.INDRegA} alt="" require={true} />
-                    </div>
-
-                  </td>
-                  <td>
-                    <div className={styles.wrapper}>
-                      <Image src={Images.DDPCUni} alt="" require={true} />
+                      <Image src={Images.CTAMC} alt="" />
                     </div>
                   </td>
-                  <td>
-
+                  <td id="eighteen"></td>
+                  <td id="nineteen"></td>
+                  <td id="twenty">
                     <div className={styles.wrapper}>
-                      <Image src={Images.PCCRO} alt="" require={true} />
-                    </div>
-                  </td>
-                  <td>
-
-                    <div className={styles.wrapper}>
-                      <Image src={Images.DDPCCRO} alt="" require={true} />
+                      <Image src={Images.NDAregAgency} alt="" />
                     </div>
                   </td>
                 </tr>
 
-                <tr>
-                  <td>content</td>
-                  <td>
-                    <div className={styles.wrapper}>
-                      <Image src={Images.CTRegA} alt="" require={true} />
-                    </div>
-
-                  </td>
-                  <td>
-                    <div className={styles.wrapper}>
-                      <Image src={Images.CTIndustry} alt="" require={true} />
-                    </div>
-                  </td>
-                  <td>
-                    <div className={styles.wrapper}>
-                      <Image src={Images.CTCRO} alt="" require={true} />
-                    </div>
-                  </td>
-                  <td>content</td>
-                </tr>
-
-
 
                 <tr>
-                  <td>content</td>
-                  <td>
-                    <div className={styles.wrapper}>
-                      <Image src={Images.CTAMC} alt="" require={true} />
+                  <td id="twentyone">
+
+                  </td>
+                  <td id="twentytwo">
+                    <div id="MandDIndustry" className={styles.wrapper}>
+                      <Image src={Images.MandDIndustry} alt="" />
                     </div>
                   </td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                </tr>
-                <tr>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
-                  <td>content</td>
+                  <td id="twentythree">
+
+                    <div id="MandDInsurance" className={styles.wrapper}>
+                      <Image src={Images.MandDInsurance} alt="" />
+                    </div>
+                  </td>
+                  <td id="twentyfour">
+                    <div id="MandDRegA" className={styles.wrapper}>
+                      <Image src={Images.MandDRegA} alt="" />
+                    </div>
+                  </td>
+                  <td id="twentyfive">
+
+                  </td>
                 </tr>
               </tbody>
             </table>
