@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #333;
+  background-color: #555;
 }
 
 a {
@@ -42,7 +42,6 @@ h2 {
   font-size: 36px;
   line-height: 40px;
   padding: 30px 0px;
-
 }
 
 .subtitle,
@@ -56,6 +55,7 @@ h3 {
 p {
   font-size: 20px;
   font-weight: 300;
+  padding-bottom: 30px;
 }
 
 .legal {
@@ -69,27 +69,101 @@ p {
   font-weight: 800;
 }
 
-/* TODO: figure out how to target Contextual selectors outside of globals.css */
-/* details>summary {
-  list-style: none;
+.mobile {
+  display: none;
 }
 
-summary::-webkit-details-marker {
-  display: none
+.desktop {
+  display: block;
 }
 
-summary::after {
-  content: ' ▼';
-  color: white;
-}
-details[open] summary:after {
-  content: " ►";
-}
-summary {
-  color: white;
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
-details {
-  height: 150px;
-  margin-top: 126px;
-} */
+.footer {
+  background: rgb(51, 51, 51);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333333",endColorstr="#555555",GradientType=1);
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+tr,
+td {
+  border: 1px solid black;
+}
+
+td {
+  width: 20%;
+  height: 100%;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 808px is the width where the nav begins to crumple */
+
+@media only screen and (max-width: 808px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  h1.logo {
+    font-size: 50px;
+  }
+
+  .title,
+  h2 {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 0px;
+  }
+
+  .subtitle,
+  h3 {
+    font-size: 24px;
+    padding: 25px 0px 30px 0px;
+    font-weight: 500;
+  }
+
+  .para,
+  p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+}

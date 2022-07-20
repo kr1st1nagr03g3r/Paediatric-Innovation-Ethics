@@ -10,7 +10,7 @@ class Navigation extends React.Component {
 
             <div className={styles.navbar}>
             <div className={styles.logo}>
-                <h1 className="text-[100px] font-bold text-white logo pr-[30px]">PBT</h1>
+                <h1 className="text-white logo pr-[30px]">PBT</h1>
                 </div>
             <div className={styles.navContent}>
                 <Link href="/">HOME</Link>

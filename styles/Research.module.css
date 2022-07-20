@@ -1,0 +1,18 @@
+.research {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper,
+.researchBackground {
+  position: relative;
+}
+
+/* td.redFA {
+  top: 0px;
+} */
