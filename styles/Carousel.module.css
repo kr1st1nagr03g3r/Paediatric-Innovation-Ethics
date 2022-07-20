@@ -83,20 +83,8 @@
 }
 
 .cloud01 {
-  animation-duration: 6s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
   padding-top: 70px;
-}
-
-@keyframes slidein {
-  from {
-    left: 1480px;
-  }
-
-  to {
-    left: 0px;
-  }
+  opacity: 1;
 }
 
 .cloud02 {
@@ -220,4 +208,76 @@
 
 .phases {
   font-size: 2rem;
+}
+
+/* CLOUD ANIMATION */
+
+.cloud01 {
+  animation: cloud01 30s ease 0s 10 normal forwards;
+}
+
+@keyframes cloud01 {
+  0% {
+    transform: translateX(21px);
+  }
+
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+.cloud02 {
+  animation: cloud02 30s ease 0s 10 normal forwards;
+}
+
+@keyframes cloud02 {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+.cloud03 {
+  animation: cloud02 30s ease 0s 10 normal forwards;
+}
+
+@keyframes cloud03 {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+.cloud04 {
+  animation: cloud02 30s ease 0s 10 normal forwards;
+}
+
+@keyframes cloud04 {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+.cloud05 {
+  animation: cloud02 30s ease 0s 10 normal forwards;
+}
+
+@keyframes cloud05 {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-250px);
+  }
 }
