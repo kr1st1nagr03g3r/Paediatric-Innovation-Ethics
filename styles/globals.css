@@ -78,11 +78,11 @@ p {
 }
 
 .center {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  align-content: center !important;
+  align-items: center !important;
 }
 
 .footer {
@@ -200,5 +200,5 @@ tr {
   font-size: 20px !important;
   border: 1px solid white !important;
   border-radius: 80px !important;
-  margin: 30px 0px;
+  margin: 30px 0px !important;
 }
