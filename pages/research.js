@@ -101,7 +101,18 @@ export default function BasicTabs() {
             </p>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            Roadblocks
+            <p className="para">Roadblocks represent...
+
+              Ullamco tempor ad excepteur Lorem consectetur ea eiusmod do. Ut quis ullamco exercitation laborum occaecat veniam incididunt. Incididunt commodo aute est nostrud excepteur enim non fugiat dolore incididunt culpa ut. Proident nulla fugiat in enim exercitation anim eiusmod duis dolor aliqua excepteur aliquip. Dolore dolor Lorem voluptate ea non nulla mollit ipsum.
+              <br></br><br></br>
+
+              <Container fixed className={styles.research}>
+                <Box className={styles.wrapper}>
+                  <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+                </Box>
+              </Container>
+
+            </p>
           </TabPanel>
           <TabPanel value={value} index={2}>
             Item Three
