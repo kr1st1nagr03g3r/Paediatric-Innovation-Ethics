@@ -121,6 +121,7 @@ td {
 td {
   width: 20%;
   height: 100%;
+  /* opacity: 20%; */
 }
 
 tr {
@@ -166,4 +167,27 @@ tr {
     font-size: 16px;
     font-weight: 100;
   }
+}
+
+.researchButtons {
+  color: ghostwhite;
+  border: 1px solid ghostwhite;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.researchButtons:hover {
+  background: darkgrey;
+}
+
+.buttonGroupBox {
+  margin: 60px 0px;
+}
+
+.researchButtonPanel {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
 }

@@ -18,7 +18,7 @@ class Drugdiscovery extends React.PureComponent {
         <CarouselMandD />
         <div>
           <div className="bg-[#00a122] mt-[-10px] relative flex flex-col content-center px-0">
-            <p className="containerGlobal text-center px-[50px] py-[60px]">Following regulatory approval for clinical use, developers must then manufacture and develop the drug at commercial scale.This involves working out logistical issues related to product labeling, packaging, shipping, and storage.</p>
+            <p className="containerGlobal text-center px-[50px] py-[60px]">Following regulatory approval for clinical use, developers must then manufacture and develop the drug at commercial scale. This involves working out logistical issues related to product labeling, packaging, shipping, and storage.</p>
           </div>
         </div>
 

@@ -24,26 +24,26 @@ class Drugdiscovery extends React.PureComponent {
 
                 <Card>
                     <div id="fundingAgency" className="basis-1/4 justify-center align-center content-center flex" >
-                        <Image src={ Images.redFundingAgency } height="100" width="100" alt="" />
+                        <Image src={Images.redFundingAgency} height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">Funding Agency</b>:  Governments may financially support early stage research through grant-providing agencies, such as Genome Canada or CIHR, or the NIH and NSF in the United States. The purpose of public funding agencies at this stage is to provide capital for promising pre-competitive or fundamental research that the private market otherwise would not fund at such an early stage.</p>
+                        <p><b className="bolder">Funding Agency</b>:  Governments may financially support early stage research through grant-providing agencies, such as Genome Canada or CIHR, or the NIH and NSF in the United States. The purpose of public funding agencies at this stage along the road is to provide capital for promising pre-competitive or fundamental research that the private market otherwise would not fund at such an early stage.</p>
                     </div>
                 </Card>
 
 
                 <Card>
                     <div id="TTO" className="basis-1/4 justify-center align-center content-center flex" >
-                        <Image src={ Images.redTTO } height="100" width="100" alt="" />
+                        <Image src={Images.redTTO} height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">TTO</b>: Technology Transfer Offices (TTOs) facilitate the protection and management of intellectual property (IP) produced at a particular institution (most often in academic institutions). In the drug discovery stage, they expedite the commercialization of IP created via research by licensing, patenting, or creating spin-offs. </p>
+                        <p><b className="bolder">TTO</b>: Technology Transfer Offices (TTOs) facilitate the protection and management of intellectual property (IP) produced at a particular institution (most often in academic institutions). In the drug discovery stage, they expedite the commercialization of IP by licensing, patenting, or helping to create spin-offs. </p>
                     </div>
                 </Card>
 
                 <Card>
                     <div id="humanCapital" className="basis-1/4 justify-center align-center content-center flex">
-                        <Image src={ Images.redHumanCapital } height="100" width="100" alt="" /></div>
+                        <Image src={Images.redHumanCapital} height="100" width="100" alt="" /></div>
                     <div className="basis-3/4">
                         <p><b className="bolder">Human Capital</b>: Human capital refers to the individual expertise and skills understood to be invaluable for a particular organization or endeavor. In the drug discovery stage, this refers to the institutional ability to hire and retain excellent scientists (including graduate students, post-doctoral researchers, faculty, and lab techs), as well as the ability to execute necessary non-scientific work (e.g. reviewing contracts and IP filings at TTOs). Human capital also includes human subject volunteers who participate in clinical trials.</p>
                     </div>
@@ -51,7 +51,7 @@ class Drugdiscovery extends React.PureComponent {
 
                 <Card>
                     <div id="bureaucraticHurdles" className="basis-1/4 justify-center align-center content-center flex">
-                        <Image src={ Images.redBeurocraticHurdles } width="60" height="60" alt=""  />
+                        <Image src={Images.redBeurocraticHurdles} width="60" height="60" alt="" />
                     </div>
                     <div className="basis-3/4">
                         <p><b className="bolder">Bureaucratic Hurdles</b>: Bureaucratic hurdles in the drug discovery stage include but are not limited to filing for human subjects approval, negotiating contracts, managing IP filings, and other organizational issues. Hurdles often occur at points of interaction between different stakeholders (e.g. scientists acquiring lab space within a university, research teams partnering with a contract research organization, TTOs mediating between research teams, administrative staff managing funding and research group members).
@@ -61,10 +61,10 @@ class Drugdiscovery extends React.PureComponent {
 
                 <Card>
                     <div id="basicScience" className="basis-1/4 justify-center align-center content-center flex">
-                        <Image src={ Images.redBasicScience } width="100" height="100" alt="" />
+                        <Image src={Images.redBasicScience} width="100" height="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">Basic Science</b>: This broad term encompasses includes but is not limited to the scientific process of identifying targets, proof-of-concept studies, in vitro/in vivo testing, species selection, etc.</p>
+                        <p><b className="bolder">Basic Science</b>: This broad term includes but is not limited to the scientific process of identifying targets, proof-of-concept studies, in vitro/in vivo testing, species selection, etc.</p>
                     </div>
                 </Card>
 

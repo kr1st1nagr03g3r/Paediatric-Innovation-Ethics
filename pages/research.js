@@ -6,7 +6,8 @@ import Images from '../public/images/research/index.js'
 import styles from "../styles/Research.module.css"
 import Box from '@mui/system/Box'
 import Container from '@mui/system/Container'
-import Tooltip from '../components/Tooltip'
+import ButtonGroup from '../components/ButtonGroup'
+
 
 
 const Research = () => {
@@ -23,6 +24,15 @@ const Research = () => {
         <p className="para">
           We use the metaphor of a roadmap to demonstrate that translational medicine occurs sequentially but not necessarily linearly. This overview of the road to pharmaceutical innovation visualizes the institutions along the route, the stakeholders moving along the road, and the roadblocks and bottlenecks that impede progress. This is an active ecosystem where the social and scientific are inherently enmeshed.
         </p>
+        <Container><ButtonGroup>
+
+
+        </ButtonGroup>
+          <p className="text-white text-center">        Minim nostrud non dolor do occaecat est minim esse aute ex eiusmod. Duis elit quis labore do enim fugiat duis. Ea irure occaecat dolore do ut cupidatat pariatur occaecat cupidatat anim proident eiusmod sint esse.
+            Cupidatat est amet dolor eu dolor eiusmod ullamco nisi quis occaecat. Veniam mollit tempor ut consectetur qui deserunt proident eiusmod magna fugiat dolore. Sit in eiusmod voluptate eiusmod aliquip ad sint voluptate. Adipisicing est do ut laboris elit qui duis non.</p>
+
+        </Container>
+
 
 
         <Container fixed className={styles.research}>
@@ -78,12 +88,12 @@ td#eleven {
 }
 
 td#fourteen {
-       margin-left: 53px;
-           margin-top: 190px;
+margin-left: 53px;
+  margin-top: 190px;
 }
 
 td#sixteen {
-      width: 390px;
+width: 390px;
 }
 
 td#eighteen {
@@ -113,7 +123,7 @@ td#twentythree {
 
 td#twentyfour {
   margin-top: 240px;
-margin-left: 252px;
+  margin-left: 252px;
 }
   }
       `}</style>

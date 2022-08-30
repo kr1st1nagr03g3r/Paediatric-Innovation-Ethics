@@ -20,7 +20,7 @@ const NDA = () => {
       <CarouselPC />
       <div>
         <div className="bg-[#00a122] mt-[-10px] relative flex flex-col content-center px-0">
-          <p className="containerGlobal text-center px-[50px] py-[60px]">If in P3 trials the drug is found to be safe and effective for its intended use, the investigator may submit a New Drug Application (NDA) to their regulatory oversight body.The NDA includes all data compiled at each stage, from discovery through P3 trials, and information related to labeling, safety, prescribing, and patents.Once received by the regulatory agency, the NDA is reviewed and either approved or denied for marketing and distribution within a particular jurisdiction.</p>
+          <p className="containerGlobal text-center px-[50px] py-[60px]">If, in P3 trials, the drug is found to be safe and effective for its intended use, the investigator may submit a New Drug Application (NDA) to their respective regulatory oversight body. The NDA includes all data compiled at each stage, from discovery through P3 trials, and information related to labeling, safety, prescribing, and patents. Once received by the regulatory agency, the NDA is reviewed and either approved or denied for marketing and distribution within a particular jurisdiction.</p>
         </div>
       </div>
 
