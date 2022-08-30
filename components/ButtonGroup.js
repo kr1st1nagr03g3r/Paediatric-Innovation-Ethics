@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from '@Mui/material/Button';
+import Button from '@mui/material/Button';
 
 const ButtonGroup = () => {
     const [data, setData] = useState(["Roadmap", "Roadblocks", "Barriers", "Stages"]);
