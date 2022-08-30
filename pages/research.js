@@ -11,7 +11,7 @@ import Button from '@mui/material/Button'
 import styles from '../styles/Research.module.css'
 import Image from 'next/image'
 import Images from '../public/images/research/index.js'
-
+import Pylons from '../public/images/01drugDiscovery/shadedPylons.svg'
 
 
 
@@ -95,6 +95,7 @@ export default function BasicTabs() {
               <Container fixed className={styles.research}>
                 <Box className={styles.wrapper}>
                   <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+
                 </Box>
               </Container>
 
@@ -109,6 +110,7 @@ export default function BasicTabs() {
               <Container fixed className={styles.research}>
                 <Box className={styles.wrapper}>
                   <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+                  <Image src={Pylons} alt="pylons" className="pylons" />
                 </Box>
               </Container>
 
