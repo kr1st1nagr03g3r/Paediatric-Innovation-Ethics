@@ -152,7 +152,7 @@ td#seven {
 
 td#eight {
   position: absolute;
-      top: 240px;
+    top: 210px;
 }
 
 td#nine {
