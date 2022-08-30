@@ -1,3 +1,14 @@
+.tabs {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.items {
+  display: flex !important;
+  justify-content: center;
+}
+
 .research {
   display: flex !important;
   flex-direction: column;
@@ -11,4 +22,10 @@
 .wrapper,
 .researchBackground {
   position: relative;
+}
+
+.MuiBox-root {
+  color: white !important;
+  display: flex;
+  justify-content: center;
 }

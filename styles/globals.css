@@ -191,3 +191,14 @@ tr {
   justify-content: center;
   margin-bottom: 30px;
 }
+
+.button {
+  text-transform: none !important;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 80px;
+  margin-top: 15px;
+}
