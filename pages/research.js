@@ -134,7 +134,7 @@ td#twentyfour {
                   <td id="two" >
 
                     <div className={styles.wrapper}>
-                      {/* <Tooltip><p>Hello</p></Tooltip> */}
+
                       <Image src={Images.redTTO} alt="" />
                     </div></td>
                   <td id="three"></td>
