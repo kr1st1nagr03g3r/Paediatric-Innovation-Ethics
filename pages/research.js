@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import * as React from 'react';
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
@@ -11,7 +12,8 @@ import Button from '@mui/material/Button'
 import styles from '../styles/Research.module.css'
 import Image from 'next/image'
 import Images from '../public/images/research/index.js'
-import Pylons from '../public/images/01drugDiscovery/shadedPylons.svg'
+// import Pylons from '../public/images/01drugDiscovery/shadedPylons.svg'
+import Link from 'next/link';
 
 
 
@@ -64,57 +66,73 @@ export default function BasicTabs() {
       <Container className="center">
         <h2 className="title">Model Overview</h2>
 
-
         <p className="para">Linear models of pharmaceutical innovation and commercialization are inadequate and did not capture the complexity of the data we acquired. For example, the classic “pipeline model” of drug development demonstrates the sequence of events necessary for translating basic research from “bench to bedside,” however it fails to account for the elaborate systems of communication, legal and regulatory framework, financial inputs and outputs, and scientific hurdles that shape and determine the path of innovation in this sector.
         </p>
-
         <p className="para">
           We use the metaphor of a roadmap to demonstrate that translational medicine occurs sequentially but not necessarily linearly. This overview of the road to pharmaceutical innovation visualizes the institutions along the route, the stakeholders moving along the road, and the roadblocks and bottlenecks that impede progress. This is an active ecosystem where the social and scientific are inherently enmeshed.
         </p>
         <Button className="button" href="/research#items">Learn More</Button>
+        <br></br>
+        <br></br>
       </Container>
 
 
-
+      <h2 className="title" id="items">The Innovation Roadmap</h2>
       <Container className={styles.tabs}>
-        <Box id="items" sx={{ width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+
+        <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
           <Box sx={{ borderBottom: 0, borderColor: 'divider', }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs" >
-              <Tab sx={{ textTransform: 'none', color: '#ffffff' }} label="Roadmap" {...a11yProps(0)} />
-              <Tab sx={{ textTransform: 'none', color: '#ffffff' }} label="Roadblocks" {...a11yProps(1)} />
-              <Tab sx={{ textTransform: 'none', color: '#ffffff' }} label="Buildings" {...a11yProps(2)} />
+              <Tab className={styles.tabStyle} label="Roadmap" {...a11yProps(0)} />
+              <Tab className={styles.tabStyle} label="Stages / Colours" {...a11yProps(1)} />
+              <Tab className={styles.tabStyle} label="Barriers / Roadblocks " {...a11yProps(2)} />
+              <Tab className={styles.tabStyle} label="Buildings / Institutions" {...a11yProps(3)} />
             </Tabs>
           </Box>
+
           <TabPanel value={value} index={0}>
-
-            <p className="para">Roads represent...
-
-              Ullamco tempor ad excepteur Lorem consectetur ea eiusmod do. Ut quis ullamco exercitation laborum occaecat veniam incididunt. Incididunt commodo aute est nostrud excepteur enim non fugiat dolore incididunt culpa ut. Proident nulla fugiat in enim exercitation anim eiusmod duis dolor aliqua excepteur aliquip. Dolore dolor Lorem voluptate ea non nulla mollit ipsum.
-              <br></br><br></br>
-
-              <Container fixed className={styles.research}>
-                <Box className={styles.wrapper}>
-                  <Image src={Images.researchBackground} alt="green grass background for many buildings" />
-
-                </Box>
-              </Container>
-
+            <p className="para">The Innovation Roadmap is a representation of how scientific research moves from “bench to bedside,” specifically in the context of developing and commercializing new drug products.
             </p>
+            <p className="para">
+              The Innovation Roadmap presents an alternative to the traditional drug pipeline model: it challenges the idea that scientific innovation and drug development is linear. The model allows for movement back and forth on the road, but also presents possibilities for alternative routes and travel methods to “hack” the roadmap and existing barriers to innovation.
+            </p>
+            <Container fixed className={styles.research}>
+              <Box className={styles.wrapper}>
+                <Image src={Images.desaturatedRoadmap} alt="green grass background for many buildings" />
+              </Box>
+            </Container>
           </TabPanel>
+
           <TabPanel value={value} index={1}>
-            <p className="para">Roadblocks represent...
+            <Container>
+              <p className="para">The colours along the road represent the stages of development that research moves through as it is refined, tested, and ultimately used to create a product for clinical use. From drug discovery through to manufacturing and distribution, each stage along the road is met with various obstacles and requires the participation of specific stakeholders.
+              </p>
+            </Container>
+            <Container className="coloursLegend">
+              <Box>
+                <p className="para">
+                  <b>We represent these stages as follows:</b><br></br><br></br>
+                </p>
+              </Box>
+              <Box>
 
-              Ullamco tempor ad excepteur Lorem consectetur ea eiusmod do. Ut quis ullamco exercitation laborum occaecat veniam incididunt. Incididunt commodo aute est nostrud excepteur enim non fugiat dolore incididunt culpa ut. Proident nulla fugiat in enim exercitation anim eiusmod duis dolor aliqua excepteur aliquip. Dolore dolor Lorem voluptate ea non nulla mollit ipsum.
-              <br></br><br></br>
+                <Link href="/research#items"><span className="red tabItem">Red: Drug Discovery</span></Link><br></br>
+                <Link href="/research#items"><span className="orangeGradient tabItem">Orange Gradient: Drug Discovery & Pre-Clinical</span></Link><br></br>
+                <Link href="/research#items"><span className="orange tabItem">Orange: New Drug Application (NDA)</span></Link><br></br>
+                <Link href="/research#items"><span className="yellow tabItem">Yellow: Pre-Clinical</span></Link><br></br>
+                <Link href="/research#items"><span className="green tabItem">Green: Manufacturing and Distribution</span></Link><br></br>
+                <Link href="/research#items"><span className="blue tabItem">Blue: Clinical</span></Link><br></br>
+                <Link href="/research#items"><span className="purple tabItem">Purple: Investigational New Drug Application (IND)</span></Link><br></br>
 
-              <Container fixed className={styles.research}>
-                <Box className={styles.wrapper}>
-                  <Image src={Images.researchBackground} alt="green grass background for many buildings" />
-                  <Image src={Pylons} alt="pylons" className="pylons" />
-                </Box>
-              </Container>
+              </Box>
+            </Container>
 
-            </p>
+            <Container fixed className={styles.research}>
+              <Box className={styles.wrapper}>
+                <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+                {/* <Image src={Pylons} alt="pylons" className="pylons" /> */}
+              </Box>
+            </Container>
           </TabPanel>
           <TabPanel value={value} index={2}>
 
@@ -282,8 +300,6 @@ td#twentyfour {
                       <td id="fifteen"></td>
                     </tr>
 
-
-
                     <tr>
                       <td id="sixteen"></td>
                       <td id="seventeen">
@@ -300,10 +316,8 @@ td#twentyfour {
                       </td>
                     </tr>
 
-
                     <tr>
                       <td id="twentyone">
-
                       </td>
                       <td id="twentytwo">
                         <div id="MandDIndustry" className={styles.wrapper}>
@@ -327,15 +341,11 @@ td#twentyfour {
                     </tr>
                   </tbody>
                 </table>
-
-
-
-
               </Box>
             </Container>
           </TabPanel>
         </Box>
-      </Container>
+      </Container >
       <Footer />
     </>
   );

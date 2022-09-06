@@ -11,12 +11,12 @@
 
 .research {
   display: flex !important;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
 }
 
 .wrapper,
@@ -32,4 +32,24 @@
 
 .pylons {
   position: absolute;
+}
+
+.tabStyle {
+  text-transform: none;
+  color: ghostwhite;
+  font-family: Nunito;
+  font-size: 1.25rem;
+}
+
+.tabItem {
+  padding: 15px;
+}
+
+.coloursLegend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
