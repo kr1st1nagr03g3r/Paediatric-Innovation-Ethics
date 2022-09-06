@@ -20,129 +20,13 @@ import Link from 'next/link';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
-    <>
 
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    </>
-  );
+    <>
+      <style jsx>{`
+p {
+  font-family: 'Nunito' !important;
 }
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
-export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  return (
-    <>
-
-      <Navigation />
-      <Container className="center">
-        <h2 className="title">Model Overview</h2>
-
-        <p className="para">Linear models of pharmaceutical innovation and commercialization are inadequate and did not capture the complexity of the data we acquired. For example, the classic “pipeline model” of drug development demonstrates the sequence of events necessary for translating basic research from “bench to bedside,” however it fails to account for the elaborate systems of communication, legal and regulatory framework, financial inputs and outputs, and scientific hurdles that shape and determine the path of innovation in this sector.
-        </p>
-        <p className="para">
-          We use the metaphor of a roadmap to demonstrate that translational medicine occurs sequentially but not necessarily linearly. This overview of the road to pharmaceutical innovation visualizes the institutions along the route, the stakeholders moving along the road, and the roadblocks and bottlenecks that impede progress. This is an active ecosystem where the social and scientific are inherently enmeshed.
-        </p>
-        <Button className="button" href="/research#items">Learn More</Button>
-        <br></br>
-        <br></br>
-      </Container>
-
-
-      <h2 className="title" id="items">The Innovation Roadmap</h2>
-      <Container className={styles.tabs}>
-
-        <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-          <Box sx={{ borderBottom: 0, borderColor: 'divider', }}>
-            <Tabs value={value} onChange={handleChange} aria-label="basic tabs" >
-              <Tab className={styles.tabStyle} label="Roadmap" {...a11yProps(0)} />
-              <Tab className={styles.tabStyle} label="Stages / Colours" {...a11yProps(1)} />
-              <Tab className={styles.tabStyle} label="Barriers / Roadblocks " {...a11yProps(2)} />
-              <Tab className={styles.tabStyle} label="Buildings / Institutions" {...a11yProps(3)} />
-            </Tabs>
-          </Box>
-
-          <TabPanel value={value} index={0}>
-            <p className="para">The Innovation Roadmap is a representation of how scientific research moves from “bench to bedside,” specifically in the context of developing and commercializing new drug products.
-            </p>
-            <p className="para">
-              The Innovation Roadmap presents an alternative to the traditional drug pipeline model: it challenges the idea that scientific innovation and drug development is linear. The model allows for movement back and forth on the road, but also presents possibilities for alternative routes and travel methods to “hack” the roadmap and existing barriers to innovation.
-            </p>
-            <Container fixed className={styles.research}>
-              <Box className={styles.wrapper}>
-                <Image src={Images.desaturatedRoadmap} alt="green grass background for many buildings" />
-              </Box>
-            </Container>
-          </TabPanel>
-
-          <TabPanel value={value} index={1}>
-            <Container>
-              <p className="para">The colours along the road represent the stages of development that research moves through as it is refined, tested, and ultimately used to create a product for clinical use. From drug discovery through to manufacturing and distribution, each stage along the road is met with various obstacles and requires the participation of specific stakeholders.
-              </p>
-            </Container>
-            <Container className="coloursLegend">
-              <Box>
-                <p className="para">
-                  <b>We represent these stages as follows:</b><br></br><br></br>
-                </p>
-              </Box>
-              <Box>
-
-                <Link href="/research#items"><span className="red tabItem">Red: Drug Discovery</span></Link><br></br>
-                <Link href="/research#items"><span className="orangeGradient tabItem">Orange Gradient: Drug Discovery & Pre-Clinical</span></Link><br></br>
-                <Link href="/research#items"><span className="orange tabItem">Orange: New Drug Application (NDA)</span></Link><br></br>
-                <Link href="/research#items"><span className="yellow tabItem">Yellow: Pre-Clinical</span></Link><br></br>
-                <Link href="/research#items"><span className="green tabItem">Green: Manufacturing and Distribution</span></Link><br></br>
-                <Link href="/research#items"><span className="blue tabItem">Blue: Clinical</span></Link><br></br>
-                <Link href="/research#items"><span className="purple tabItem">Purple: Investigational New Drug Application (IND)</span></Link><br></br>
-
-              </Box>
-            </Container>
-
-            <Container fixed className={styles.research}>
-              <Box className={styles.wrapper}>
-                <Image src={Images.researchBackground} alt="green grass background for many buildings" />
-                {/* <Image src={Pylons} alt="pylons" className="pylons" /> */}
-              </Box>
-            </Container>
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-
-            <Container fixed className={styles.research}>
-              <p className="para">Hover over the buildings to learn more...</p>
-              <Box className={styles.wrapper}>
-                <Image src={Images.researchBackground} alt="green grass background for many buildings" />
-                <table>
-                  <tbody>
-                    <style jsx>{`
 td#one {
 width: 168px;
 }
@@ -230,122 +114,262 @@ td#twentyfour {
   }
       `}</style>
 
-                    {/* ROW ONE */}
-                    <tr>
-                      <td id="one"></td>
-                      <td id="two" >
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ p: 3 }}>
+            <Typography>{children}</Typography>
+          </Box>
+        )}
+      </div>
+    </>
+  );
+}
 
-                        <div className={styles.wrapper}>
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
 
-                          <Image src={Images.redTTO} alt="" />
-                        </div></td>
-                      <td id="three"></td>
-                      <td id="four">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.redFundingAgency} alt="" />
-                        </div>
-                      </td>
-                      <td id="five">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.DDPCRegAgency} alt="" />
-                        </div></td>
-                    </tr>
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
 
-                    {/* ROW TWO */}
-                    <tr>
-                      <td id="six"></td>
-                      <td id="seven">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.INDRegA} alt="" />
-                        </div>
+export default function BasicTabs() {
+  const [value, setValue] = React.useState(0);
 
-                      </td>
-                      <td id="eight">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.DDPCUni} alt="" />
-                        </div>
-                      </td>
-                      <td id="nine">
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
-                        <div className={styles.wrapper}>
-                          <Image src={Images.PCCRO} alt="" />
-                        </div>
-                      </td>
-                      <td id="ten">
+  return (
+    <>
 
-                        <div className={styles.wrapper}>
-                          <Image src={Images.DDPCCRO} alt="" />
-                        </div>
-                      </td>
-                    </tr>
-                    {/* ROW THREE */}
-                    <tr>
-                      <td id="eleven"></td>
-                      <td id="twelve">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.CTRegA} alt="" />
-                        </div>
+      <Navigation />
+      <Container className="center">
+        <h2 className="title">Model Overview</h2>
 
-                      </td>
-                      <td id="thirteen">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.CTIndustry} alt="" />
-                        </div>
-                      </td>
-                      <td id="fourteen">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.CTCRO} alt="" />
-                        </div>
-                      </td>
-                      <td id="fifteen"></td>
-                    </tr>
+        <p className="para">Linear models of pharmaceutical innovation and commercialization are inadequate and did not capture the complexity of the data we acquired. For example, the classic “pipeline model” of drug development demonstrates the sequence of events necessary for translating basic research from “bench to bedside,” however it fails to account for the elaborate systems of communication, legal and regulatory framework, financial inputs and outputs, and scientific hurdles that shape and determine the path of innovation in this sector.
+        </p>
+        <p className="para">
+          We use the metaphor of a roadmap to demonstrate that translational medicine occurs sequentially but not necessarily linearly. This overview of the road to pharmaceutical innovation visualizes the institutions along the route, the stakeholders moving along the road, and the roadblocks and bottlenecks that impede progress. This is an active ecosystem where the social and scientific are inherently enmeshed.
+        </p>
+        <Button className="button" href="/research#items">Learn More</Button>
+        <br></br>
+        <br></br>
+      </Container>
 
-                    <tr>
-                      <td id="sixteen"></td>
-                      <td id="seventeen">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.CTAMC} alt="" />
-                        </div>
-                      </td>
-                      <td id="eighteen"></td>
-                      <td id="nineteen"></td>
-                      <td id="twenty">
-                        <div className={styles.wrapper}>
-                          <Image src={Images.NDAregAgency} alt="" />
-                        </div>
-                      </td>
-                    </tr>
+      <h2 className="title" id="items">The Innovation Roadmap</h2>
 
-                    <tr>
-                      <td id="twentyone">
-                      </td>
-                      <td id="twentytwo">
-                        <div id="MandDIndustry" className={styles.wrapper}>
-                          <Image src={Images.MandDIndustry} alt="" />
-                        </div>
-                      </td>
-                      <td id="twentythree">
 
-                        <div id="MandDInsurance" className={styles.wrapper}>
-                          <Image src={Images.MandDInsurance} alt="" />
-                        </div>
-                      </td>
-                      <td id="twentyfour">
-                        <div id="MandDRegA" className={styles.wrapper}>
-                          <Image src={Images.MandDRegA} alt="" />
-                        </div>
-                      </td>
-                      <td id="twentyfive">
-
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </Box>
-            </Container>
-          </TabPanel>
+      <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+        <Box sx={{ borderBottom: 0, borderColor: 'divider', }}>
+          <Tabs value={value} onChange={handleChange} aria-label="basic tabs" >
+            <Tab className={styles.tabStyle} label="Roadmap" {...a11yProps(0)} />
+            <Tab className={styles.tabStyle} label="Stages / Colours" {...a11yProps(1)} />
+            <Tab className={styles.tabStyle} label="Barriers / Roadblocks " {...a11yProps(2)} />
+            <Tab className={styles.tabStyle} label="Buildings / Institutions" {...a11yProps(3)} />
+          </Tabs>
         </Box>
-      </Container >
+
+
+        <TabPanel value={value} index={0}>
+          <Container>
+            <p className="para">The Innovation Roadmap is a representation of how scientific research moves from “bench to bedside,” specifically in the context of developing and commercializing new drug products.
+            </p>
+            <p className="para">
+              The Innovation Roadmap presents an alternative to the traditional drug pipeline model: it challenges the idea that scientific innovation and drug development is linear. The model allows for movement back and forth on the road, but also presents possibilities for alternative routes and travel methods to “hack” the roadmap and existing barriers to innovation.
+            </p>
+          </Container>
+          <Container fixed className={styles.research}>
+            <Box className={styles.wrapper}>
+              <Image src={Images.desaturatedRoadmap} alt="green grass background for many buildings" />
+            </Box>
+          </Container>
+        </TabPanel>
+
+        <TabPanel value={value} index={1}>
+          <Container>
+            <p className="para">The colours along the road represent the stages of development that research moves through as it is refined, tested, and ultimately used to create a product for clinical use. From drug discovery through to manufacturing and distribution, each stage along the road is met with various obstacles and requires the participation of specific stakeholders.
+            </p>
+          </Container>
+          <Container className={styles.colourLegend}>
+            <Box>
+              <p className="para">
+                <strong>We represent these stages as follows:</strong><br></br><br></br>
+              </p>
+            </Box>
+            <Box classname={styles.colours}>
+
+              <p><span className="red tabItem">Red: Drug Discovery</span></p>
+              {/* <p><span className="orangeGradient tabItem">Orange Gradient: Drug Discovery & Pre-Clinical</span></p> */}
+              <p><span className="orange tabItem">Orange: New Drug Application (NDA)</span></p>
+              <p><span className="yellow tabItem">Yellow: Pre-Clinical</span></p>
+              <p><span className="green tabItem">Green: Manufacturing and Distribution</span></p>
+              <p><span className="blue tabItem">Blue: Clinical</span></p>
+              <p><span className="purple tabItem">Purple: Investigational New Drug Application (IND)</span></p>
+
+            </Box>
+          </Container>
+
+          <Container fixed className={styles.research}>
+            <Box className={styles.wrapper}>
+              <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+              {/* <Image src={Pylons} alt="pylons" className="pylons" /> */}
+            </Box>
+          </Container>
+        </TabPanel>
+
+
+        <TabPanel value={value} index={2}>
+          <Container fixed className={styles.research}>
+            <p className="para">Barriers and roadblocks (depicted by traffic signs and obstructions) represent the challenges and obstacles that potentially hinder the development and commercialization of new drugs.They can be bottlenecks that slow movement along the “road” to a trickle, or broader, more consequential obstructions that bring movement to a grinding halt.
+              <br></br>
+              Hover over the buildings to learn more...</p>
+            <Box className={styles.wrapper}>
+              <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+            </Box>
+          </Container>
+        </TabPanel>
+
+        <TabPanel value={value} index={3}>
+
+          <Container fixed className={styles.research}>
+            <p className="para">Barriers and roadblocks (depicted by traffic signs and obstructions) represent the challenges and obstacles that potentially hinder the development and commercialization of new drugs.They can be bottlenecks that slow movement along the “road” to a trickle, or broader, more consequential obstructions that bring movement to a grinding halt.
+              <br></br>
+              Hover over the buildings to learn more...</p>
+            <Box className={styles.wrapper}>
+              <Image src={Images.researchBackground} alt="green grass background for many buildings" />
+              <table>
+                <tbody>
+
+
+                  {/* ROW ONE */}
+                  <tr>
+                    <td id="one"></td>
+                    <td id="two" >
+
+                      <span className={styles.wrapper}>
+
+                        <Image src={Images.redTTO} alt="" />
+                      </span></td>
+                    <td id="three"></td>
+                    <td id="four">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.redFundingAgency} alt="" />
+                      </span>
+                    </td>
+                    <td id="five">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.DDPCRegAgency} alt="" />
+                      </span></td>
+                  </tr>
+
+                  {/* ROW TWO */}
+                  <tr>
+                    <td id="six"></td>
+                    <td id="seven">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.INDRegA} alt="" />
+                      </span>
+
+                    </td>
+                    <td id="eight">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.DDPCUni} alt="" />
+                      </span>
+                    </td>
+                    <td id="nine">
+
+                      <span className={styles.wrapper}>
+                        <Image src={Images.PCCRO} alt="" />
+                      </span>
+                    </td>
+                    <td id="ten">
+
+                      <span className={styles.wrapper}>
+                        <Image src={Images.DDPCCRO} alt="" />
+                      </span>
+                    </td>
+                  </tr>
+                  {/* ROW THREE */}
+                  <tr>
+                    <td id="eleven"></td>
+                    <td id="twelve">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.CTRegA} alt="" />
+                      </span>
+
+                    </td>
+                    <td id="thirteen">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.CTIndustry} alt="" />
+                      </span>
+                    </td>
+                    <td id="fourteen">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.CTCRO} alt="" />
+                      </span>
+                    </td>
+                    <td id="fifteen"></td>
+                  </tr>
+
+                  <tr>
+                    <td id="sixteen"></td>
+                    <td id="seventeen">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.CTAMC} alt="" />
+                      </span>
+                    </td>
+                    <td id="eighteen"></td>
+                    <td id="nineteen"></td>
+                    <td id="twenty">
+                      <span className={styles.wrapper}>
+                        <Image src={Images.NDAregAgency} alt="" />
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td id="twentyone">
+                    </td>
+                    <td id="twentytwo">
+                      <span id="MandDIndustry" className={styles.wrapper}>
+                        <Image src={Images.MandDIndustry} alt="" />
+                      </span>
+                    </td>
+                    <td id="twentythree">
+
+                      <span id="MandDInsurance" className={styles.wrapper}>
+                        <Image src={Images.MandDInsurance} alt="" />
+                      </span>
+                    </td>
+                    <td id="twentyfour">
+                      <span id="MandDRegA" className={styles.wrapper}>
+                        <Image src={Images.MandDRegA} alt="" />
+                      </span>
+                    </td>
+                    <td id="twentyfive">
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </Box>
+          </Container>
+        </TabPanel>
+
+      </Box>
+
       <Footer />
     </>
   );

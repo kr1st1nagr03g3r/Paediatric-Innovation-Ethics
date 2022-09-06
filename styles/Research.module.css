@@ -42,14 +42,14 @@
 }
 
 .tabItem {
-  padding: 15px;
+  padding: 5px;
 }
 
-.coloursLegend {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-  align-items: center;
+.colourLegend {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-content: center !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
 }
