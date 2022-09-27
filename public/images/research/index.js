@@ -16,6 +16,7 @@ const Images = {
     MandDRegA: require('../research/MandDRegA.svg').default,
     NDAregAgency: require('../research/NDAregAgency.svg').default,
     desaturatedRoadmap: require('../research/desaturatedRoadmap.svg').default,
+    road00: require('../research/road00.svg').default
 
 }
 
