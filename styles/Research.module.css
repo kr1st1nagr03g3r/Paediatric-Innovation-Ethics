@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.research {
+/* .research {
   display: flex !important;
   flex-direction: column !important;
   flex-wrap: nowrap !important;
@@ -17,7 +17,7 @@
   justify-content: center !important;
   align-items: center !important;
   position: relative !important;
-}
+} */
 
 .wrapper,
 .researchBackground {
