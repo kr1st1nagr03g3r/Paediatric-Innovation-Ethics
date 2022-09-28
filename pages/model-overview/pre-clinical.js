@@ -27,7 +27,7 @@ class PreClinical extends React.PureComponent {
                         <Image src={Images.PCCRO} height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">CRO</b>:  In the pre-clinical stage, Contract Research Organizations (CROs) are contracted by universities to test new drug candidates prior to human testing. This typically includes compound synthesis and conducting animal studies.</p>
+                        <p className="bolder">CRO:  In the pre-clinical stage, Contract Research Organizations (CROs) are contracted by universities to test new drug candidates prior to human testing. This typically includes compound synthesis and conducting animal studies.</p>
                     </div>
                 </Card>
 
@@ -36,7 +36,7 @@ class PreClinical extends React.PureComponent {
                         <Image src={Images.PCBHurdles} height="100" width="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">Bureaucratic Hurdles</b>: Bureaucratic hurdles in the drug discovery stage include but are not limited to filing for human subjects, IRB approval, negotiating contracts, managing IP filings, and other organizational issues. Hurdles often occur at points of interaction between different stakeholders (e.g. scientists acquiring lab space within a university, research teams partnering with a contract research organization, TTOs mediating between research teams, administrative staff managing funding and research group members). </p>
+                        <p className="bolder">Bureaucratic Hurdles: Bureaucratic hurdles in the drug discovery stage include but are not limited to filing for human subjects, IRB approval, negotiating contracts, managing IP filings, and other organizational issues. Hurdles often occur at points of interaction between different stakeholders (e.g. scientists acquiring lab space within a university, research teams partnering with a contract research organization, TTOs mediating between research teams, administrative staff managing funding and research group members). </p>
                     </div>
                 </Card>
 
@@ -45,7 +45,7 @@ class PreClinical extends React.PureComponent {
                         <Image src={Images.PCResearch} width="100" height="100" alt="" />
                     </div>
                     <div className="basis-3/4">
-                        <p><b className="bolder">Research Translation</b>: Translating benchwork to animal studies is another hurdle faced by researchers at this stage. Before human trials can begin, ideas from the earliest phase of drug discovery must be translated successfully into animal studies to test the proof of principal in vivo. </p>
+                        <p className="bolder">Research Translation: Translating benchwork to animal studies is another hurdle faced by researchers at this stage. Before human trials can begin, ideas from the earliest phase of drug discovery must be translated successfully into animal studies to test the proof of principal in vivo. </p>
                     </div>
                 </CardLast>
 

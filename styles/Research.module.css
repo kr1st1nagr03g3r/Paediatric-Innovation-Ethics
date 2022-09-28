@@ -9,16 +9,6 @@
   justify-content: center;
 }
 
-/* .research {
-  display: flex !important;
-  flex-direction: column !important;
-  flex-wrap: nowrap !important;
-  align-content: center !important;
-  justify-content: center !important;
-  align-items: center !important;
-  position: relative !important;
-} */
-
 .wrapper,
 .researchBackground {
   position: relative;
@@ -30,10 +20,6 @@
   justify-content: center;
 }
 
-.pylons {
-  position: absolute;
-}
-
 .tabStyle {
   text-transform: none;
   color: ghostwhite;
@@ -43,13 +29,12 @@
 
 .tabItem {
   padding: 5px;
+  border-radius: 30px !important;
 }
 
-.colourLegend {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-content: center !important;
-  justify-content: space-evenly !important;
-  align-items: center !important;
+.colours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
