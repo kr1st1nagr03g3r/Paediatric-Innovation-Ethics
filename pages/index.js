@@ -11,11 +11,7 @@ import { Box } from '@mui/system'
 export default function Home() {
   return (
     <>
-      <style jsx>{`
-  h2, h3, p {
-color: ghostwhite;
-  }
-    `}</style>
+
 
       <div className={styles.container}>
         <Head>
@@ -37,7 +33,7 @@ color: ghostwhite;
             <Image src={Images.girlPlaying} height="700" width="960" alt="children playing and painting with their teacher" />
           </div>
 
-          <h4 className="white">Project Background</h4>
+          <h4>Project Background</h4>
           <p>Pediatric brain tumours (PBT) are the leading cause of cancer-related death in children under the age of 20. Treatments are often ineffective and have significant effects on quality of life. New “precision medicine” treatments using genomic and molecular analyses have a great deal of potential, but there are barriers in bringing targeted treatments to pediatric populations. </p>
 
           <Box className="center">

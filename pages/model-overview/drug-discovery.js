@@ -70,7 +70,7 @@ class Drugdiscovery extends React.PureComponent {
 
                 <CardLast>
                     <div id="dataSharing" className="basis-1/4 justify-center align-center content-center flex">
-                        <Image width="100" height="100" alt="" src="https://raw.githubusercontent.com/kr1st1nagr03g3r/Let-s-Make-Burgers/a1647d5f7799390dbafc9856a626724f8daabcdc/public/images/01drugDiscovery/redDataSharingPylons.svg" />
+                        <Image width="100" height="100" alt="" src={Images.shadedPylons} />
                     </div>
                     <div className="basis-3/4">
                         <p><b className="bolder">Data Sharing</b>: Data sharing is critical in the pre-competitive stage, particularly in the context of rare diseases and pediatrics as there are limited patients and few trials and consequently less basic knowledge of diseases, pathways, and drugs. The competitive nature of academic publishing may create a reluctance among scientists to share data for fear of being scooped. Researchers may also encounter challenges to sharing data and know-how within the broader scientific community due to onerous legal agreements, and/or costly or nonexistent sharing platforms/infrastructure (e.g. contracts between CROs or industry partners, NDAs, proprietary sharing platforms and libraries). </p>

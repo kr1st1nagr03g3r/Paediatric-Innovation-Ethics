@@ -28,7 +28,7 @@ const CarouselDDPC = () => {
 
 
 
-            
+
                 <div>
                     <h2 className={styles.phases}>P1</h2>
                     <Link href="#AMC">
@@ -43,7 +43,7 @@ const CarouselDDPC = () => {
                     </Link>
                 </div>
                 <div>
-                <h2 className={styles.phases}></h2>
+                    <h2 className={styles.phases}></h2>
                     <Link href="#industry">
                         <Image src={Images.CTIndustry} alt="" />
                     </Link>
@@ -102,8 +102,6 @@ const CarouselDDPC = () => {
                 <Link href="/model-overview/nda">
                     <Image src={ArrowRight} alt="" />
                 </Link>
-
-
             </div>
 
 
