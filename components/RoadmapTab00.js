@@ -15,11 +15,12 @@ const HtmlTooltip = styled(({ className, ...props }) => (
     maxWidth: 600,
     border: '1px solid #dadde9',
     fontFamily: 'Nunito',
-    padding: '15px',
+    padding: '30px',
+    borderRadius: '25px',
   },
 }))
 
-export default function CustomizedTooltips() {
+export default function RoadmapTab00() {
   return (
     <>
       <style jsx>{``}</style>
@@ -34,7 +35,8 @@ export default function CustomizedTooltips() {
             development is linear. The model allows for movement back and forth
             on the road, but also presents possibilities for alternative routes
             and travel methods to “hack” the roadmap and existing barriers to
-            innovation.
+            innovation.<br></br>
+            <br></br>
           </p>
         </Container>
         <HtmlTooltip
@@ -42,10 +44,10 @@ export default function CustomizedTooltips() {
           title={
             <>
               <Box>
-                <h3 className="bold">I&apos;m Interactive!</h3>
+                <h3 className="bold tooltipTitle">I&apos;m Interactive!</h3>
                 <p className="black">
-                  The Innovation Roadmap is interactive. Hover over the
-                  illustrations to learn more about them.
+                  The Innovation Roadmap is interactive. Hover over items to
+                  learn more about them.
                 </p>
               </Box>
             </>

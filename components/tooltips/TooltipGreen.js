@@ -19,7 +19,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipOrangeG() {
+export default function TooltipGreen() {
   return (
     <>
       <style jsx>{`
@@ -49,18 +49,19 @@ export default function TooltipOrangeG() {
           <>
             <Box>
               <h3 className="bold tooltipTitle">
-                Drug Discovery / Pre-Clinical
+                Manufacturing and Distributing
               </h3>
               <p className="black fade">
-                In the pre-clinical stage, the drug&apos;s safety and efficacy
-                is evaluated in non-human animals and the results are
-                extrapolated to prospective human outcomes.
+                Following regulatory approval for clinical use, developers must
+                then manufacture and develop the drug at commercial scale. This
+                involves working out logistical issues related to product
+                labeling, packaging, shipping, and storage.
               </p>
 
               <Button
                 color="primary"
                 variant="contained"
-                href="model-overview/drug-discovery-pre-clinical"
+                href="/manufacturing-distributing"
               >
                 Learn More
               </Button>
@@ -71,7 +72,7 @@ export default function TooltipOrangeG() {
         <Container maxWidth={true} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="orangeGradient">Orange&nbsp;Gradient</p>
+              <p className="green">Green</p>
             </span>
           </Box>
         </Container>
