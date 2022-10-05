@@ -19,7 +19,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipOrangeG() {
+export default function TooltipPurple() {
   return (
     <>
       <style jsx>{`
@@ -48,19 +48,19 @@ export default function TooltipOrangeG() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">
-                Drug Discovery / Pre-Clinical
-              </h3>
+              <h3 className="bold tooltipTitle">Clinical Trials</h3>
               <p className="black fade">
-                In the pre-clinical stage, the drug&apos;s safety and efficacy
-                is evaluated in non-human animals and the results are
-                extrapolated to prospective human outcomes.
+                Clinical trials involve testing new drugs in human volunteers to
+                evaluate their safety and efficacy. Trials typically involve
+                safety and dosage testing (Phase I), efficacy and optimal dosing
+                in a larger patient group (Phase II), and safety and efficacy
+                testing at commercial scale (Phase III).
               </p>
 
               <Button
                 color="primary"
                 variant="contained"
-                href="model-overview/drug-discovery-pre-clinical"
+                href="/model-overview/clinical-trials"
               >
                 Learn More
               </Button>
@@ -71,7 +71,7 @@ export default function TooltipOrangeG() {
         <Container maxWidth={true} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="orangeGradient">Orange&nbsp;Gradient</p>
+              <p className="purple">Purple</p>
             </span>
           </Box>
         </Container>

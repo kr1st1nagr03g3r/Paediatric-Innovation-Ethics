@@ -19,7 +19,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipOrangeG() {
+export default function TooltipOrange() {
   return (
     <>
       <style jsx>{`
@@ -48,19 +48,20 @@ export default function TooltipOrangeG() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">
-                Drug Discovery / Pre-Clinical
-              </h3>
+              <h3 className="bold tooltipTitle">NDA</h3>
               <p className="black fade">
-                In the pre-clinical stage, the drug&apos;s safety and efficacy
-                is evaluated in non-human animals and the results are
-                extrapolated to prospective human outcomes.
+                If, in P3 trials, the drug is found to be safe and effective for
+                its intended use, the investigator may submit a New Drug
+                Application (NDA) to their respective regulatory oversight body.
+                The NDA includes all data compiled at each stage, from discovery
+                through P3 trials, and information related to labeling, safety,
+                prescribing, and patents.
               </p>
 
               <Button
                 color="primary"
                 variant="contained"
-                href="model-overview/drug-discovery-pre-clinical"
+                href="/model-overview/nda"
               >
                 Learn More
               </Button>
@@ -71,7 +72,7 @@ export default function TooltipOrangeG() {
         <Container maxWidth={true} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="orangeGradient">Orange&nbsp;Gradient</p>
+              <p className="orange">Orange</p>
             </span>
           </Box>
         </Container>

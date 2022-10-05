@@ -19,7 +19,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipOrangeG() {
+export default function TooltipBlue() {
   return (
     <>
       <style jsx>{`
@@ -48,19 +48,18 @@ export default function TooltipOrangeG() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">
-                Drug Discovery / Pre-Clinical
-              </h3>
+              <h3 className="bold tooltipTitle">IND</h3>
               <p className="black fade">
-                In the pre-clinical stage, the drug&apos;s safety and efficacy
-                is evaluated in non-human animals and the results are
-                extrapolated to prospective human outcomes.
+                Prior to testing in humans, drug developers must file their
+                Investigational New Drug (IND) application with their governing
+                regulatory body. This IND application includes preclinical and
+                toxicity study data, and drug manufacturing information.
               </p>
 
               <Button
                 color="primary"
                 variant="contained"
-                href="model-overview/drug-discovery-pre-clinical"
+                href="/model-overview/ind"
               >
                 Learn More
               </Button>
@@ -71,7 +70,7 @@ export default function TooltipOrangeG() {
         <Container maxWidth={true} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="orangeGradient">Orange&nbsp;Gradient</p>
+              <p className="blue">Blue</p>
             </span>
           </Box>
         </Container>
