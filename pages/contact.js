@@ -1,8 +1,11 @@
 import React from 'react'
+import TestForSVGHover from '../components/TestForSVGHover'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <TestForSVGHover />
+    </div>
   )
 }
 

@@ -22,7 +22,7 @@ export default function Home() {
 
         <Navigation />
 
-        <Container>
+        <Container maxWidth="lg">
           <h3>
             This work models the hypothetical roadmap of pharmaceutical
             innovation in pediatric neuro-oncology. The roadmap presents the
@@ -65,16 +65,18 @@ export default function Home() {
               alt="a lab researching paediatric brain tumors"
             />
           </Box>
-          <p>
-            In this study, we gathered data about the social, ethical, economic,
-            and legal challenges of researching and developing new
-            pharmaceutical treatments for pediatric brain tumours. Our aim was
-            to identify and understand the barriers and facilitators to the
-            implementation of safer and more effective treatments, facilitate
-            communication across stakeholder groups, and highlight potential
-            interventions.{' '}
-          </p>
           <Box>
+            <p>
+              In this study, we gathered data about the social, ethical,
+              economic, and legal challenges of researching and developing new
+              pharmaceutical treatments for pediatric brain tumours. Our aim was
+              to identify and understand the barriers and facilitators to the
+              implementation of safer and more effective treatments, facilitate
+              communication across stakeholder groups, and highlight potential
+              interventions.{' '}
+            </p>
+          </Box>
+          <Box sx={{ padding: '60px 0px' }}>
             <Image
               src={Images.dna}
               alt="a lab researching paediatric brain tumors"
