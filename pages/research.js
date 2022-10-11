@@ -62,7 +62,7 @@ export default function BasicTabs() {
   return (
     <>
       <style jsx>{`
-        .tabStyle {
+        button {
           text-transform: none;
           color: ghostwhite;
           font-family: Nunito;
