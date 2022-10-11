@@ -62,7 +62,7 @@ export default function BasicTabs() {
   return (
     <>
       <style jsx>{`
-        button {
+        .tabStyle {
           text-transform: none;
           color: ghostwhite;
           font-family: Nunito;
@@ -92,23 +92,19 @@ export default function BasicTabs() {
         >
           <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
+              <Tab className="tabStyle" label="Roadmap" {...a11yProps(0)} />
               <Tab
-                className={styles.tabStyle}
-                label="Roadmap"
-                {...a11yProps(0)}
-              />
-              <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Stages and Colours"
                 {...a11yProps(1)}
               />
               <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Barriers and Roadblocks "
                 {...a11yProps(2)}
               />
               <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Buildings and Institutions"
                 {...a11yProps(3)}
               />
