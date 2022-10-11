@@ -91,7 +91,17 @@ export default function BasicTabs() {
           }}
         >
           <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
-            <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="basic tabs"
+              sx={{
+                textTransform: 'none',
+                color: 'ghostwhite',
+                fontFamily: 'Nunito',
+                fontSize: '1.25rem',
+              }}
+            >
               <Tab className="tabStyle" label="Roadmap" {...a11yProps(0)} />
               <Tab
                 className="tabStyle"
