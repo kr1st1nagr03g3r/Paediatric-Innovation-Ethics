@@ -89,6 +89,10 @@ small,
   text-transform: none;
 }
 
+.MuiButtonBase-root {
+  text-transform: none !important;
+}
+
 .MuiButton-root {
   color: red;
   text-transform: none;
