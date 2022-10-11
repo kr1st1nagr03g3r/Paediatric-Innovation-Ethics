@@ -7,7 +7,7 @@ import Tab from '@mui/material/Tab'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import styles from '../styles/Research.module.css'
+
 import Image from 'next/image'
 import Images from '../public/images/research/index.js'
 import RoadmapTab00 from '../components/RoadmapTab00'
@@ -18,11 +18,6 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props
   return (
     <>
-      <style jsx>{`
-
-  }
-      `}</style>
-
       <div
         role="tabpanel"
         hidden={value !== index}
@@ -66,10 +61,24 @@ export default function BasicTabs() {
 
   return (
     <>
+      <style jsx>{`
+        button[aria-expanded='false'] {
+          text-transform: none;
+          color: ghostwhite;
+          font-family: Nunito;
+          font-size: 1.25rem;
+        }
+         {
+          text-transform: none;
+          color: ghostwhite;
+          font-family: Nunito;
+          font-size: 1.25rem;
+        }
+      `}</style>
       <Navigation />
 
       <Container
-        maxWidth={true}
+        maxWidth
         sx={{
           backgroundColor: '#007100',
           paddingTop: '30px',
@@ -88,24 +97,32 @@ export default function BasicTabs() {
           }}
         >
           <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
-            <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
+            <Tabs
+              textColor="inherit"
+              allowScrollButtonsMobile={true}
+              value={value}
+              onChange={handleChange}
+              aria-label="basic tabs"
+              sx={{
+                textTransform: 'none',
+                color: 'ghostwhite',
+                fontFamily: 'Nunito',
+                fontSize: '1.25rem',
+              }}
+            >
+              <Tab className="tabStyle" label="Roadmap" {...a11yProps(0)} />
               <Tab
-                className={styles.tabStyle}
-                label="Roadmap"
-                {...a11yProps(0)}
-              />
-              <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Stages and Colours"
                 {...a11yProps(1)}
               />
               <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Barriers and Roadblocks "
                 {...a11yProps(2)}
               />
               <Tab
-                className={styles.tabStyle}
+                className="tabStyle"
                 label="Buildings and Institutions"
                 {...a11yProps(3)}
               />

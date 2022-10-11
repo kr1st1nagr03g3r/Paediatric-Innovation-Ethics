@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Nav.module.css'
 import Link from 'next/link'
 import Logo from './Logo'
-import { Container } from '@mui/material'
+import Container from '@mui/material/Container'
 
 export default function Navigation() {
   return (
