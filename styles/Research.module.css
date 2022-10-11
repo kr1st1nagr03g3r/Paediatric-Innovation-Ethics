@@ -20,13 +20,6 @@
   justify-content: center;
 }
 
-/* .tabStyle {
-  text-transform: none;
-  color: ghostwhite;
-  font-family: Nunito;
-  font-size: 1.25rem;
-} */
-
 .tabItem {
   padding: 5px;
   border-radius: 30px !important;
@@ -37,4 +30,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+/* buildings begin */
+.image01 {
+  top: 112px;
+  left: 100px;
 }

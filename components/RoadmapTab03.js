@@ -2,7 +2,8 @@ import * as React from 'react'
 import styles from '../styles/Research.module.css'
 import Images from '../public/images/index'
 import Image from 'next/image'
-import { Box, Container } from '@mui/material'
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
 import ImageTest from './Barriers'
 import Barriers from './Barriers'
 import Buildings from './Buildings'
@@ -33,7 +34,6 @@ export default function RoadmapTab03() {
           </p>
           <Box className={styles.wrapper}></Box>
         </Container>
-
         <Buildings />
       </div>
     </>

@@ -2,8 +2,9 @@ import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import styles from '../../styles/Research.module.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-import Container from '@mui/material/Container'
-import { Box, Button, ListItem, ListItemText } from '@mui/material'
+import { Box, Button, Container, ListItem, ListItemText } from '@mui/material'
+import Images from '../../public/images/research/index.js'
+import Image from 'next/image'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -19,7 +20,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipYellow() {
+export default function Tooltip01() {
   return (
     <>
       <style jsx>{`
@@ -48,19 +49,19 @@ export default function TooltipYellow() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">Pre-Clinical</h3>
+              <h3 className="bold tooltipTitle">TTO</h3>
               <p className="black fade">
-                The pre-clinical stage evaluates the drug&apos;s safety and
-                efficacy in non-human animals and extrapolates the results to
-                prospective human outcomes. At this stage, in-vivo studies are
-                conducted to understand optimal dosage, rates of metabolism and
-                elimination, and the half-life of the drug.
+                Technology Transfer Offices (TTOs) facilitate the protection and
+                management of intellectual property (IP) produced at a
+                particular institution (most often in academic institutions). In
+                the drug discovery stage, they expedite the commercialization of
+                IP by licensing, patenting, or helping to create spin-offs.
               </p>
 
               <Button
                 color="primary"
                 variant="contained"
-                href="/model-overview/pre-clinical"
+                href="/model-overview/drug-discovery"
               >
                 Learn More
               </Button>
@@ -71,7 +72,14 @@ export default function TooltipYellow() {
         <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="yellow">Yellow</p>
+              <p className="red tooltipSize">
+                <Image
+                  height={90}
+                  width={100}
+                  src={Images.redTTO}
+                  alt="red Technology Transfer Offices"
+                />
+              </p>
             </span>
           </Box>
         </Container>
