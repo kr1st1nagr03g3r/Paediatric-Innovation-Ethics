@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles'
 import styles from '../../styles/Research.module.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 
-import { Box, Button, Container, ListItem, ListItemText } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -67,7 +67,7 @@ export default function TooltipBlue() {
           </>
         }
       >
-        <Container maxWidth={true} className={styles.colourLegend}>
+        <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
               <p className="blue">Blue</p>

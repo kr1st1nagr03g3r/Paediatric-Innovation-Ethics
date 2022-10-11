@@ -68,7 +68,7 @@ export default function TooltipYellow() {
           </>
         }
       >
-        <Container maxWidth={true} className={styles.colourLegend}>
+        <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
               <p className="yellow">Yellow</p>

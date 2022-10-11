@@ -18,11 +18,6 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props
   return (
     <>
-      <style jsx>{`
-
-  }
-      `}</style>
-
       <div
         role="tabpanel"
         hidden={value !== index}
@@ -69,7 +64,7 @@ export default function BasicTabs() {
       <Navigation />
 
       <Container
-        maxWidth={true}
+        maxWidth
         sx={{
           backgroundColor: '#007100',
           paddingTop: '30px',
