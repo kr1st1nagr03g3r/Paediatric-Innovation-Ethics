@@ -113,6 +113,13 @@ small,
   background-color: #808080;
 }
 
+.MuiTab-root {
+  text-transform: none;
+  color: ghostwhite;
+  font-family: Nunito;
+  font-size: 1.25rem;
+}
+
 .noBackground {
   -webkit-text-decoration: none;
   text-decoration: none;
