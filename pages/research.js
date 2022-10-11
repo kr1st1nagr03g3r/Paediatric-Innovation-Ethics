@@ -62,7 +62,13 @@ export default function BasicTabs() {
   return (
     <>
       <style jsx>{`
-        .tabStyle {
+        button[aria-expanded='false'] {
+          text-transform: none;
+          color: ghostwhite;
+          font-family: Nunito;
+          font-size: 1.25rem;
+        }
+         {
           text-transform: none;
           color: ghostwhite;
           font-family: Nunito;
@@ -92,6 +98,8 @@ export default function BasicTabs() {
         >
           <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
             <Tabs
+              textColor="inherit"
+              allowScrollButtonsMobile={true}
               value={value}
               onChange={handleChange}
               aria-label="basic tabs"
