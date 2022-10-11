@@ -91,6 +91,8 @@ small,
 
 .MuiButtonBase-root {
   text-transform: none !important;
+  font-family: 'Nunito', sans-serif !important;
+  font-size: inherit;
 }
 
 .MuiButton-root {
