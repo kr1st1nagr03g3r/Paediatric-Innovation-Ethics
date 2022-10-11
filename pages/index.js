@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Navigation from '../components/Navigation'
 import Image from 'next/image'
 import Images from '../public/images/home/index'
@@ -10,7 +9,7 @@ import { Box } from '@mui/system'
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
+      <div>
         <Head>
           <title>PBT - Paediatric Brain Tumors</title>
           <meta
@@ -30,7 +29,7 @@ export default function Home() {
             innovation in this sector, based on extensive in-depth qualitative
             and ethnographic research.
           </h3>
-          <Box className="center">
+          <Box className="desktop">
             <Image
               src={Images.schoolroom}
               height="180"
@@ -38,7 +37,7 @@ export default function Home() {
               alt="children playing and painting with their teacher"
             />
           </Box>
-          <div className="mobile image p-[60px]">
+          <div className="mobile">
             <Image
               src={Images.girlPlaying}
               height="700"
@@ -54,7 +53,7 @@ export default function Home() {
             often ineffective and have significant effects on quality of life.
             New “precision medicine” treatments using genomic and molecular
             analyses have a great deal of potential, but there are barriers in
-            bringing targeted treatments to pediatric populations.{' '}
+            bringing targeted treatments to pediatric populations.
           </p>
 
           <Box className="center">
