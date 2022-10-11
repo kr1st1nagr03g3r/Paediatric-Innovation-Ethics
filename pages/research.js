@@ -61,6 +61,14 @@ export default function BasicTabs() {
 
   return (
     <>
+      <style jsx>{`
+        .tabStyle {
+          text-transform: none;
+          color: ghostwhite;
+          font-family: Nunito;
+          font-size: 1.25rem;
+        }
+      `}</style>
       <Navigation />
 
       <Container

@@ -20,12 +20,12 @@
   justify-content: center;
 }
 
-.tabStyle {
+/* .tabStyle {
   text-transform: none;
   color: ghostwhite;
   font-family: Nunito;
   font-size: 1.25rem;
-}
+} */
 
 .tabItem {
   padding: 5px;
