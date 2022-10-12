@@ -27,6 +27,10 @@ export default function Giraffe(props) {
   return (
     <>
       <style jsx>{`
+        .kristina {
+          background: blue;
+        }
+
         .red,
         .orangeGradient,
         .orange,

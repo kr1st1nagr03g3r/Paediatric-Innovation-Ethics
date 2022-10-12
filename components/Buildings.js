@@ -20,22 +20,12 @@ import Tooltip15 from './tooltips/Tooltip15'
 import Monkey from './tooltips/Monkey'
 
 import redTTO from '../public/images/research/redTTO.svg'
-import { TextSnippet } from '@mui/icons-material'
-import { blue } from '@mui/material/colors'
 
 export default function Buildings() {
-  const test = {
-    color: 'red',
-  }
-
   return (
     <>
       <style jsx>
         {`
-          .test {
-            color: red;
-          }
-
           .parent {
             position: relative;
             top: 0;
@@ -110,14 +100,13 @@ export default function Buildings() {
             <div className="absolute size buildingPosition04">
               <Monkey
                 giraffeOne={{
-                  titleStyle: blue,
+                  titleStyle: 'kristina',
                   title: 'this is a title',
                   description: 'this is a description',
                   link: '/',
                   buttonText: 'This is button text',
                   icon: redTTO,
                   alt: 'this is an alt tag',
-                  titleStyle: test,
                 }}
               />
             </div>
