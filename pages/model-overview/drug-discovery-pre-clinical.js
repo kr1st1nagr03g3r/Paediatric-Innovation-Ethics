@@ -19,6 +19,8 @@ class DrugdiscoveryPC extends React.PureComponent {
             justify-content: center;
             align-items: center;
             width: 300px;
+            min-width: 200px;
+            height: auto;
             padding: 20px;
           }
 
@@ -38,7 +40,7 @@ class DrugdiscoveryPC extends React.PureComponent {
           sx={{ background: '#00a122', padding: '60px 0px' }}
         >
           <Container maxWidth="lg">
-            <p className="containerGlobal text-center px-[50px] py-[60px]">
+            <p>
               In the pre-clinical stage, the drug&apos;s safety and efficacy is
               evaluated in non-human animals and the results are extrapolated to
               prospective human outcomes. At this stage, in-vivo studies are
@@ -171,7 +173,7 @@ class DrugdiscoveryPC extends React.PureComponent {
             </Card>
 
             <Card>
-              <div id="BasicScience" className="imageStyleSmall">
+              <div id="BasicScience" className="imageStyle">
                 <Image
                   src={Images.DDPCBasicScience}
                   width="100"
