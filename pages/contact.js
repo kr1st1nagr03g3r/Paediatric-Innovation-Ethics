@@ -3,11 +3,10 @@ import Card from '@mui/material/Card'
 import React from 'react'
 import Navigation from '../components/Navigation'
 import Image from 'next/image'
-import Jennifer from '../public/images/jennifer.svg'
-import Kasia from '../public/images/kasia.svg'
-import Peggy from '../public/images/peggy.svg'
+
 import Button from '@mui/material/Button'
 import Footer from '../components/Footer'
+import Images from '../public/images/index/index.js'
 
 export default function Contact() {
   return (
@@ -79,7 +78,7 @@ export default function Contact() {
             <div className="half imageCenter">
               <span>
                 <Image
-                  src={Jennifer}
+                  src={Images.Jennifer}
                   width={400}
                   height={400}
                   alt="illustration of Jennifer Fishman"
@@ -114,7 +113,7 @@ export default function Contact() {
               <div className="half imageCenter">
                 <span>
                   <Image
-                    src={Peggy}
+                    src={Images.Peggy}
                     width={400}
                     height={400}
                     alt="illustration of Jennifer Fishman"
@@ -171,7 +170,7 @@ export default function Contact() {
             <div className="half imageCenter">
               <span>
                 <Image
-                  src={Kasia}
+                  src={Images.Kasia}
                   width={400}
                   height={400}
                   alt="illustration of Jennifer Fishman"
