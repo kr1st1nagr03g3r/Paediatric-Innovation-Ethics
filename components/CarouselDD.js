@@ -28,10 +28,6 @@ const CarouselDD = () => {
         <Link href="#TTO">
           <Image src={Images.redTTO} alt="" />
         </Link>
-
-        {/* <div className="next">
-          <Image src={Images.ghostUniversity} alt="" />
-        </div> */}
       </div>
 
       {/* ROADBLOCKS */}
