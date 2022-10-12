@@ -1,7 +1,6 @@
 import React from 'react'
 import Navigation from '../../components/Navigation'
 import Image from 'next/image'
-import CardLast from '../../components/CardLast'
 import Footer from '../../components/Footer'
 import GreenSpacer from '../../components/GreenSpacer'
 import CarouselMandD from '../../components/CarouselMandD'
