@@ -20,7 +20,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function Tooltip01() {
+export default function Tooltip02() {
   return (
     <>
       <style jsx>{`
@@ -58,11 +58,7 @@ export default function Tooltip01() {
                 IP by licensing, patenting, or helping to create spin-offs.
               </p>
 
-              <Button
-                color="primary"
-                variant="contained"
-                href="/model-overview/drug-discovery"
-              >
+              <Button variant="contained" href="/model-overview/drug-discovery">
                 Learn More
               </Button>
             </Box>

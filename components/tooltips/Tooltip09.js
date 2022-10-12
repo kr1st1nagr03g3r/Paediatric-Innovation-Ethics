@@ -20,7 +20,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function Tooltip01() {
+export default function Tooltip09() {
   return (
     <>
       <style jsx>{`
@@ -49,17 +49,20 @@ export default function Tooltip01() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">Funding Agency</h3>
+              <h3 className="bold tooltipTitle">Regulatory Agency</h3>
               <p className="black fade">
-                Governments may financially support early stage research through
-                grant-providing agencies, such as Genome Canada or CIHR, or the
-                NIH and NSF in the United States. The purpose of public funding
-                agencies at this stage along the road is to provide capital for
-                promising pre-competitive or fundamental research that the
-                private market otherwise would not fund at such an early stage.
+                Regulatory agencies oversee clinical trials to ensure they are
+                conducted safely and ethically. They will also provide feedback
+                with regards to trial design and execution. Institutional
+                research ethics boards and other entities monitor (animal and
+                human) safety, in particular, in the case of serious adverse
+                events.
               </p>
 
-              <Button variant="contained" href="/model-overview/drug-discovery">
+              <Button
+                variant="contained"
+                href="/model-overview/clinical-trials"
+              >
                 Learn More
               </Button>
             </Box>
@@ -69,12 +72,12 @@ export default function Tooltip01() {
         <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="red tooltipSize">
+              <p className="purple tooltipSize">
                 <Image
-                  height={100}
+                  height={90}
                   width={100}
-                  src={Images.redDrugDiscovery}
-                  alt="red drug discovery building"
+                  src={Images.CTRegA}
+                  alt="orange University"
                 />
               </p>
             </span>

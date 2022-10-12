@@ -4,6 +4,14 @@ import Images from '../public/images/research/index'
 
 import Tooltip01 from '../components/tooltips/Tooltip01'
 import Tooltip02 from '../components/tooltips/Tooltip02'
+import Tooltip03 from '../components/tooltips/Tooltip03'
+import Tooltip04 from './tooltips/Tooltip04'
+import Tooltip05 from './tooltips/Tooltip05'
+import Tooltip06 from './tooltips/Tooltip06'
+import Tooltip07 from './tooltips/Tooltip07'
+import Tooltip08 from './tooltips/Tooltip08'
+import Tooltip09 from './tooltips/Tooltip09'
+import Tooltip10 from './tooltips/Tooltip10'
 
 export default function Buildings() {
   return (
@@ -41,8 +49,8 @@ export default function Buildings() {
             left: 100px;
           }
           .buildingPosition02 {
-            top: 100px;
-            left: 300px;
+            top: 300px;
+            left: 100px;
           }
         `}
       </style>
@@ -58,9 +66,17 @@ export default function Buildings() {
 
             <div className="absolute size buildingPosition01">
               <Tooltip01 />
+              <Tooltip02 />
+              <Tooltip03 />
+              <Tooltip04 />
+              <Tooltip05 />
             </div>
             <div className="absolute size buildingPosition02">
-              <Tooltip02 />
+              <Tooltip08 />
+              <Tooltip09 />
+              <Tooltip10 />
+              <Tooltip07 />
+              <Tooltip06 />
             </div>
           </div>
         </div>

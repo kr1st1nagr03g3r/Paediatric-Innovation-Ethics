@@ -231,7 +231,7 @@ small,
 }
 
 .purple {
-  background: #912af4;
+  background: #732db5;
   color: ghostwhite;
 }
 
@@ -245,11 +245,10 @@ small,
 }
 
 .shadow {
-  height: 250px;
-  width: 250px;
   z-index: -1;
   border-radius: 50%;
   display: inline-block;
+
   background: -moz-radial-gradient(
     circle,
     rgba(0, 0, 0, 0.5088410364145659) 0%,
