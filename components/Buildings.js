@@ -12,12 +12,30 @@ import Tooltip07 from './tooltips/Tooltip07'
 import Tooltip08 from './tooltips/Tooltip08'
 import Tooltip09 from './tooltips/Tooltip09'
 import Tooltip10 from './tooltips/Tooltip10'
+import Tooltip11 from './tooltips/Tooltip11'
+import Tooltip12 from './tooltips/Tooltip12'
+import Tooltip13 from './tooltips/Tooltip13'
+import Tooltip14 from './tooltips/Tooltip14'
+import Tooltip15 from './tooltips/Tooltip15'
+import Monkey from './tooltips/Monkey'
+
+import redTTO from '../public/images/research/redTTO.svg'
+import { TextSnippet } from '@mui/icons-material'
+import { blue } from '@mui/material/colors'
 
 export default function Buildings() {
+  const test = {
+    color: 'red',
+  }
+
   return (
     <>
       <style jsx>
         {`
+          .test {
+            color: red;
+          }
+
           .parent {
             position: relative;
             top: 0;
@@ -49,7 +67,11 @@ export default function Buildings() {
             left: 100px;
           }
           .buildingPosition02 {
-            top: 300px;
+            top: 350px;
+            left: 100px;
+          }
+          .buildingPosition03 {
+            top: 600px;
             left: 100px;
           }
         `}
@@ -77,6 +99,27 @@ export default function Buildings() {
               <Tooltip10 />
               <Tooltip07 />
               <Tooltip06 />
+            </div>
+            <div className="absolute size buildingPosition03">
+              <Tooltip11 />
+              <Tooltip13 />
+              <Tooltip14 />
+              <Tooltip15 />
+              <Tooltip12 />
+            </div>
+            <div className="absolute size buildingPosition04">
+              <Monkey
+                giraffeOne={{
+                  titleStyle: blue,
+                  title: 'this is a title',
+                  description: 'this is a description',
+                  link: '/',
+                  buttonText: 'This is button text',
+                  icon: redTTO,
+                  alt: 'this is an alt tag',
+                  titleStyle: test,
+                }}
+              />
             </div>
           </div>
         </div>
