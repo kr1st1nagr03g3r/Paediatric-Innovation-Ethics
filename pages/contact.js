@@ -40,7 +40,7 @@ export default function Contact() {
       <Navigation />
       {/* JENNIFER */}
       <Container maxWidth disableGutters={true}>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ paddingBottom: '60px' }}>
           <h3 sx={{ color: 'red' }}>
             Ex veniam nostrud sit amet eiusmod eu labore eu minim nisi
             adipisicing aliquip irure. Deserunt voluptate proident enim ex esse
