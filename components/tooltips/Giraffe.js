@@ -35,13 +35,177 @@ export default function Giraffe(props) {
           padding: 10px 0px 0px 30px;
         }
 
+        .tt03 {
+          padding: 20px 10px 10px 10px;
+        }
+        .tt04 {
+          padding: 20px 10px 10px 10px;
+        }
+         {
+          /* RED DRUG DISCOVERY HURDLES */
+        }
         .tt01,
-        .tt02 {
+        .tt02,
+        .tt03,
+        .tt04 {
           border: 3px solid red;
           width: 100px;
           height: 100px;
           background: #696969a8;
           border-radius: 25px;
+        }
+        /* ORANGE GRADIENT DRUG DISCOVERY PRE CLINICAL HURDLES */
+
+        .tt05 {
+          padding: 30px 10px 10px 10px;
+        }
+        .tt06 {
+          padding: 20px 10px 10px 10px;
+        }
+        .tt07 {
+          padding: 10px 0px 0px 30px;
+        }
+        .tt08 {
+          padding: 20px 10px 10px 10px;
+        }
+        .tt09 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt05,
+        .tt06,
+        .tt07,
+        .tt08,
+        .tt09 {
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
+        }
+
+        .tt05::before,
+        .tt06::before,
+        .tt07::before,
+        .tt08::before,
+        .tt09::before {
+          content: '';
+          position: absolute;
+
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 25px;
+          border: 3px solid transparent;
+          background: linear-gradient(90deg, red, yellow) border-box;
+          -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+          -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+        }
+
+        /* YELLOW PRE CLINICAL HURDLES */
+
+        .tt10 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt11 {
+          padding: 30px 10px 10px 10px;
+        }
+
+        .tt10,
+        .tt11 .tt10,
+        .tt11 {
+          border: 3px solid yellow;
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
+        }
+
+        .tt12 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt12 {
+          border: 3px solid #3fb5dc;
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
+        }
+
+        .tt13 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt14 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt15 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt16 {
+          padding: 15px 0px 0px 20px;
+        }
+
+        .tt17 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt13,
+        .tt14,
+        .tt15,
+        .tt16,
+        .tt17 {
+          border: 3px solid #732db5;
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
+        }
+
+        .tt18 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt18 {
+          border: 3px solid orange;
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
+        }
+
+        .tt19 {
+          padding: 25px 10px 10px 10px;
+        }
+
+        .tt20 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt21 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt19,
+        .tt20,
+        .tt21 {
+          border: 3px solid #67dd09;
+          border-radius: 25px;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          position: relative;
         }
 
         .red,
@@ -69,7 +233,7 @@ export default function Giraffe(props) {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTip">{props.barriers.title}</h3>
+              <h3 className="bold">{props.barriers.title}</h3>
               <p className="black fade">{props.barriers.description}</p>
 
               <Button variant="contained" href={props.barriers.link}>
@@ -82,7 +246,7 @@ export default function Giraffe(props) {
         <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className={` tooltipSize ${props.barriers.tooltipColour}`}>
+              <p className={` tooltipOpacity ${props.barriers.tooltipColour}`}>
                 <Image
                   style={Imagecss}
                   src={props.barriers.icon}

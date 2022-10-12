@@ -104,28 +104,6 @@ export default function Buildings() {
             </div>
           </div>
         </div>
-        {/* <div className="absolute buildingPosition04">
-          <Monkey
-            giraffeOne={{
-              tooltipColour: 'tt01',
-              title: 'Human Capital',
-              description:
-                'Human capital refers to the individual expertise and skills understood to be invaluable for a particular organization or endeavor. In the drug discovery stage, this refers to the institutional ability to hire and retain excellent scientists (including graduate students, post-doctoral researchers, faculty, and lab techs), as well as the ability to execute necessary non-scientific work (e.g. reviewing contracts and IP filings at TTOs). Human capital also includes human subject volunteers who participate in clinical trials.',
-              link: '/model-overview/drug-discovery',
-              icon: redHumanCapital,
-              alt: 'Human Capital',
-            }}
-            giraffeTwo={{
-              tooltipColour: 'tt02',
-              title: 'Bureaucratic Hurdles',
-              description:
-                'Bureaucratic hurdles in the drug discovery stage include but are not limited to filing for human subjects approval, negotiating contracts, managing IP filings, and other organizational issues. Hurdles often occur at points of interaction between different stakeholders (e.g. scientists acquiring lab space within a university, research teams partnering with a contract research organization, TTOs mediating between research teams, administrative staff managing funding and research group members).',
-              link: '/model-overview/drug-discovery',
-              icon: redBeurocraticHurdles,
-              alt: 'Bureaucratic Hurdles',
-            }}
-          />
-        </div> */}
       </Container>
     </>
   )
