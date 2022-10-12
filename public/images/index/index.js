@@ -7,7 +7,7 @@ const Images = {
   tab02temp: require('../index/tab02temp.svg').default,
   buildings: require('../index/buildings.svg').default,
   Jennifer: require('../index/Jennifer.svg').default,
-  Peggy: require('../index/peggy.svg').default,
+  Peggy: require('../index/Peggy.svg').default,
   Kasia: require('../index/Kasia.svg').default,
 }
 
