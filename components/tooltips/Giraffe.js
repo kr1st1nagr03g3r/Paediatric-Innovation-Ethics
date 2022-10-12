@@ -27,8 +27,21 @@ export default function Giraffe(props) {
   return (
     <>
       <style jsx>{`
-        .kristina {
-          background: blue;
+        .tt01 {
+          padding: 20px 10px 10px 10px;
+        }
+
+        .tt02 {
+          padding: 10px 0px 0px 30px;
+        }
+
+        .tt01,
+        .tt02 {
+          border: 3px solid red;
+          width: 100px;
+          height: 100px;
+          background: #696969a8;
+          border-radius: 25px;
         }
 
         .red,
@@ -56,13 +69,11 @@ export default function Giraffe(props) {
         title={
           <>
             <Box>
-              <h3 className={`bold tooltipTitle ${props.barriers.titleStyle}`}>
-                {props.barriers.title}
-              </h3>
+              <h3 className="bold tooltipTip">{props.barriers.title}</h3>
               <p className="black fade">{props.barriers.description}</p>
 
               <Button variant="contained" href={props.barriers.link}>
-                {props.barriers.buttonText}
+                Learn More
               </Button>
             </Box>
           </>
@@ -71,7 +82,7 @@ export default function Giraffe(props) {
         <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="green tooltipSize">
+              <p className={` tooltipSize ${props.barriers.tooltipColour}`}>
                 <Image
                   style={Imagecss}
                   src={props.barriers.icon}

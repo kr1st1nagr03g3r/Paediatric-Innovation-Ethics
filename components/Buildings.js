@@ -19,7 +19,8 @@ import Tooltip14 from './tooltips/Tooltip14'
 import Tooltip15 from './tooltips/Tooltip15'
 import Monkey from './tooltips/Monkey'
 
-import redTTO from '../public/images/research/redTTO.svg'
+import redHumanCapital from '../public/images/01drugDiscovery/redHumanCapital.svg'
+import redBeurocraticHurdles from '../public/images/01drugDiscovery/redBeurocraticHurdles.svg'
 
 export default function Buildings() {
   return (
@@ -64,6 +65,10 @@ export default function Buildings() {
             top: 600px;
             left: 100px;
           }
+          .buildingPosition04 {
+            top: 240px;
+            left: 53px;
+          }
         `}
       </style>
       <Container>
@@ -97,21 +102,30 @@ export default function Buildings() {
               <Tooltip15 />
               <Tooltip12 />
             </div>
-            <div className="absolute size buildingPosition04">
-              <Monkey
-                giraffeOne={{
-                  titleStyle: 'kristina',
-                  title: 'this is a title',
-                  description: 'this is a description',
-                  link: '/',
-                  buttonText: 'This is button text',
-                  icon: redTTO,
-                  alt: 'this is an alt tag',
-                }}
-              />
-            </div>
           </div>
         </div>
+        {/* <div className="absolute buildingPosition04">
+          <Monkey
+            giraffeOne={{
+              tooltipColour: 'tt01',
+              title: 'Human Capital',
+              description:
+                'Human capital refers to the individual expertise and skills understood to be invaluable for a particular organization or endeavor. In the drug discovery stage, this refers to the institutional ability to hire and retain excellent scientists (including graduate students, post-doctoral researchers, faculty, and lab techs), as well as the ability to execute necessary non-scientific work (e.g. reviewing contracts and IP filings at TTOs). Human capital also includes human subject volunteers who participate in clinical trials.',
+              link: '/model-overview/drug-discovery',
+              icon: redHumanCapital,
+              alt: 'Human Capital',
+            }}
+            giraffeTwo={{
+              tooltipColour: 'tt02',
+              title: 'Bureaucratic Hurdles',
+              description:
+                'Bureaucratic hurdles in the drug discovery stage include but are not limited to filing for human subjects approval, negotiating contracts, managing IP filings, and other organizational issues. Hurdles often occur at points of interaction between different stakeholders (e.g. scientists acquiring lab space within a university, research teams partnering with a contract research organization, TTOs mediating between research teams, administrative staff managing funding and research group members).',
+              link: '/model-overview/drug-discovery',
+              icon: redBeurocraticHurdles,
+              alt: 'Bureaucratic Hurdles',
+            }}
+          />
+        </div> */}
       </Container>
     </>
   )

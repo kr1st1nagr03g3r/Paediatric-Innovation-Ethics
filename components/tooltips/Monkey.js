@@ -6,8 +6,8 @@ export default function Monkey(props) {
     <>
       <Container>
         <Giraffe barriers={props.giraffeOne} />
-        {/* <Giraffe barriers={props.giraffeTwo} />
-        <Giraffe barriers={props.giraffeThree} />
+        <Giraffe barriers={props.giraffeTwo} />
+        {/* <Giraffe barriers={props.giraffeThree} />
         <Giraffe barriers={props.giraffeFour} />
         <Giraffe barriers={props.giraffeFive} />
         <Giraffe barriers={props.giraffeSix} />
