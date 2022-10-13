@@ -26,8 +26,10 @@ import DDPCResearchTranslation from '../public/images/02drugDiscoveryPreClinical
 import redBasicScience from '../public/images/01drugDiscovery/redBasicScience.svg'
 //MONEY
 import money from '../public/images/money.svg'
+import Tooltip01 from './tooltips/Tooltip01'
+import MonkeyDark from './tooltips/MonkeyDark'
 
-export default function Buildings() {
+export default function BarriersDarkRoad() {
   return (
     <>
       <style jsx>
@@ -61,18 +63,18 @@ export default function Buildings() {
           }
         `}
       </style>
-      <Container>
+      <Container sx={{ height: '1200px' }}>
         <div className="parent">
           <div className="relative">
             <Image
-              src={Images.rainbowRoad}
+              src={Images.road00}
               width={1150}
               height={900}
               alt="green grass background for many buildings"
             />
           </div>
           <div className="absolute ">
-            <Monkey
+            <MonkeyDark
               giraffeOne={{
                 tooltipColour: 'tt01',
                 title: 'Human Capital',

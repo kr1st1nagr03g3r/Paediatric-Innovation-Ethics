@@ -2,8 +2,9 @@ import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import styles from '../../styles/Research.module.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-import Container from '@mui/material/Container'
-import { Box, Button, ListItem, ListItemText } from '@mui/material'
+import { Box, Button, Container, ListItem, ListItemText } from '@mui/material'
+import Images from '../../public/images/research/index.js'
+import Image from 'next/image'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -19,7 +20,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   },
 }))
 
-export default function TooltipYellow() {
+export default function Tooltip06() {
   return (
     <>
       <style jsx>{`
@@ -48,20 +49,15 @@ export default function TooltipYellow() {
         title={
           <>
             <Box>
-              <h3 className="bold tooltipTitle">Pre-Clinical</h3>
+              <h3 className="bold tooltipTitle">CRO</h3>
               <p className="black fade">
-                The pre-clinical stage evaluates the drug&apos;s safety and
-                efficacy in non-human animals and extrapolates the results to
-                prospective human outcomes. At this stage, in-vivo studies are
-                conducted to understand optimal dosage, rates of metabolism and
-                elimination, and the half-life of the drug.
+                In the pre-clinical stage, Contract Research Organizations
+                (CROs) are contracted by universities to test new drug
+                candidates prior to human testing. This typically includes
+                compound synthesis and conducting animal studies.
               </p>
 
-              <Button
-                color="primary"
-                variant="contained"
-                href="/model-overview/pre-clinical"
-              >
+              <Button variant="contained" href="/model-overview/pre-clinical">
                 Learn More
               </Button>
             </Box>
@@ -71,7 +67,14 @@ export default function TooltipYellow() {
         <Container maxWidth className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
-              <p className="yellow">Yellow</p>
+              <p className="yellow tooltipSize">
+                <Image
+                  height={90}
+                  width={100}
+                  src={Images.PCCRO}
+                  alt="orange University"
+                />
+              </p>
             </span>
           </Box>
         </Container>

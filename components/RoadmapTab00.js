@@ -5,6 +5,7 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import Images from '../public/images/research'
 import Image from 'next/image'
 import { Box, Container } from '@mui/material'
+import BarriersDarkRoad from './BarriersDarkRoad'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -54,12 +55,13 @@ export default function RoadmapTab00() {
           }
         >
           <Container>
-            <Image
+            {/* <Image
               src={Images.road00}
               alt="green grass background for many buildings"
-            />
+            /> */}
           </Container>
         </HtmlTooltip>
+        <BarriersDarkRoad />
       </div>
     </>
   )
