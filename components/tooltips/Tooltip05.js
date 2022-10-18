@@ -68,7 +68,7 @@ export default function Tooltip05() {
           </>
         }
       >
-        <Container maxWidth className={styles.colourLegend}>
+        <Container maxWidth={false} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
               <p className="orangeGradient tooltipSize">
