@@ -66,7 +66,7 @@ export default function Tooltip13() {
           </>
         }
       >
-        <Container maxWidth className={styles.colourLegend}>
+        <Container maxWidth={false} className={styles.colourLegend}>
           <Box className={styles.colours}>
             <span className={styles.tabItem}>
               <p className="green tooltipSize">

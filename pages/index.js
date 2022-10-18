@@ -29,7 +29,10 @@ export default function Home() {
             innovation in this sector, based on extensive in-depth qualitative
             and ethnographic research.
           </h3>
-          <Box className="desktop">
+          <Box
+            className="desktop"
+            sx={{ display: 'flex', justifyContent: 'center' }}
+          >
             <Image
               src={Images.schoolroom}
               height="180"
@@ -56,7 +59,10 @@ export default function Home() {
             bringing targeted treatments to pediatric populations.
           </p>
 
-          <Box className="center">
+          <Box
+            className="center"
+            sx={{ display: 'flex', justifyContent: 'center' }}
+          >
             <Image
               src={Images.lab}
               width={800}
