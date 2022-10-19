@@ -1,3 +1,5 @@
+![Illustration of buildings and institutions](https://github.com/kr1st1nagr03g3r/Let-s-Make-Burgers/blob/main/public/images/research/roadmap-buildings.png?raw=true "PBT Roadmap")
+
 Website for the Study of Paediatric Innovation Ethics at the University of McGill
 
 ## About:
