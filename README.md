@@ -1,42 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Website for the Study of Paediatric Innovation Ethics at the University of McGill
 
-## Getting Started
+## About:
+This work models the hypothetical roadmap of pharmaceutical innovation in pediatric neuro-oncology. The roadmap presents the social, ethical, economic, and legal barriers to and facilitators of innovation in this sector, based on extensive in-depth qualitative and ethnographic research.
 
-First, run the development server:
+## Project Background:
+Pediatric brain tumours (PBT) are the leading cause of cancer-related death in children under the age of 20. Treatments are often ineffective and have significant effects on quality of life. New “precision medicine” treatments using genomic and molecular analyses have a great deal of potential, but there are barriers in bringing targeted treatments to pediatric populations.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+In this study, we gathered data about the social, ethical, economic, and legal challenges of researching and developing new pharmaceutical treatments for pediatric brain tumours. Our aim was to identify and understand the barriers and facilitators to the implementation of safer and more effective treatments, facilitate communication across stakeholder groups, and highlight potential interventions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-## In Tailwind Config:
-Paths are configured as glob patterns, making it easy to match all of the content files in your project without a ton of configuration:
-
-Use * to match anything except slashes and hidden files
-Use ** to match zero or more directories
-Use comma separate values between {} to match against a list of options
+>This research was funded by Genome Canada and the Canadian Institute for Health Research. 🇨🇦
