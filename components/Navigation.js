@@ -9,6 +9,30 @@ import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 
+// % Needed to italicize a Next Link
+export function ModelOverviewLink() {
+  return (
+    <>
+      <style jsx>{`
+        i {
+          text-align: center;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 400;
+          line-height: 1.5;
+          color: ghostwhite;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      `}</style>
+      <Link href="/model-overview" passHref>
+        <i>
+          <p>MODEL OVERVIEW INFO</p>
+        </i>
+      </Link>
+    </>
+  )
+}
+
 // $ TOGGLE HIDDEN TEXT COMPONENT & ARROW TOGGLE
 const ToggleHiddenText = () => {
   const [show, setShow] = useState(true)
@@ -23,7 +47,6 @@ const ToggleHiddenText = () => {
     <>
       <style jsx>{`
         .navDropdown {
-          background: #2f2f2f;
         }
         .dropdownItem {
           position: absolute;
@@ -35,7 +58,7 @@ const ToggleHiddenText = () => {
           position: absolute;
           margin-top: 30px;
           border-radius: 50px;
-          z-index: 10;
+          z-index: 20;
           padding: 20px;
         }
         .dropdownContainer,
@@ -103,6 +126,7 @@ const ToggleHiddenText = () => {
                 <Link href="/model-overview/manufacturing-distributing">
                   MANUFACTURING AND DISTRIBUTING
                 </Link>
+                <ModelOverviewLink />
               </div>
             )}
           </div>
@@ -140,6 +164,15 @@ export function Hamburger() {
           z-index: 10 !important;
           background: #2f2f2f;
         }
+          .mobileModelOverview {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid ghostwhite;
+            margin: 10px;
+            border-radius: 50px;
+            background: #434242;
+          }
+        }
       `}</style>
       <Container maxWidth={false} disableGutters={true}>
         <Container
@@ -173,7 +206,27 @@ export function Hamburger() {
                   <Link href="/">HOME</Link>
                   <Link href="/research">RESEARCH</Link>
                   {/* DROPDOWN START */}
+                  <div className="mobileModelOverview">
+                    <Link href="">MODEL OVERVIEW:</Link>
 
+                    <Link href="/model-overview/drug-discovery">
+                      DRUG DISCOVERY
+                    </Link>
+                    <Link href="/model-overview/drug-discovery-pre-clinical">
+                      DRUG DISCOVERY / PRE-CLINICAL
+                    </Link>
+                    <Link href="/model-overview/pre-clinical">
+                      PRE-CLINICAL
+                    </Link>
+                    <Link href="/model-overview/ind">IND</Link>
+                    <Link href="/model-overview/clinical-trials">
+                      CLINICAL TRIALS
+                    </Link>
+                    <Link href="/model-overview/nda">NDA</Link>
+                    <Link href="/model-overview/manufacturing-distributing">
+                      MANUFACTURING AND DISTRIBUTING
+                    </Link>
+                  </div>
                   {/* DROPDOWN END */}
                   <Link href="/contact">CONTACT</Link>
                 </div>
