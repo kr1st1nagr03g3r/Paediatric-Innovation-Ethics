@@ -15,7 +15,7 @@ import TooltipGreen from './tooltips/TooltipGreen'
 export default function RoadmapTab01() {
   return (
     <>
-      <Container className={styles.roadmapInfo}>
+      <Container maxWidth="lg">
         <p>
           The colours along the road represent the stages of development that
           research moves through as it is refined, tested, and ultimately used
@@ -24,29 +24,28 @@ export default function RoadmapTab01() {
           various obstacles and requires the participation of specific
           stakeholders. <strong>We represent these stages as follows:</strong>
         </p>
-      </Container>
 
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          cursor: 'pointer',
-        }}
-      >
-        {/* //# Tooltips */}
-        <TooltipRed />
-        <TooltipOrangeG />
-        <TooltipYellow />
-        <TooltipBlue />
-        <TooltipPurple />
-        <TooltipOrange />
-        <TooltipGreen />
-      </Box>
-      <Container Container className={styles.research}>
-        <Container>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            cursor: 'pointer',
+          }}
+        >
+          {/* //# Tooltips */}
+          <TooltipRed />
+          <TooltipOrangeG />
+          <TooltipYellow />
+          <TooltipBlue />
+          <TooltipPurple />
+          <TooltipOrange />
+          <TooltipGreen />
+        </Box>
+        <Container maxWidth="lg">
           <Image
-            className={styles.rainbow}
             src={Images.rainbowRoad}
+            width={1150}
+            height={900}
             alt="green grass background for many buildings"
           />
         </Container>

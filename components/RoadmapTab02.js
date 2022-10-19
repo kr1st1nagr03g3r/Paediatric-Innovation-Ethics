@@ -33,7 +33,7 @@ export default function RoadmapTab02() {
         }
       `}</style>
       <div>
-        <Container className={styles.research}>
+        <Container maxWidth="lg">
           <p>
             Barriers and roadblocks (depicted by traffic signs and obstructions)
             represent the challenges and obstacles that potentially hinder the
@@ -44,35 +44,14 @@ export default function RoadmapTab02() {
             <br></br>
             Hover over the buildings to learn more...
           </p>
-          <Box className={styles.wrapper}>
-            {/* <Image
+          {/* <Box className={styles.wrapper}>
+             <Image
               src={Images.researchBackground}
               alt="green grass background for many buildings"
-            /> */}
-          </Box>
+            /> 
+          </Box> */}
+          <Barriers />
         </Container>
-        {/* <HtmlTooltip
-          followCursor={true}
-          title={
-            <>
-              <Box>
-                <h3 className="bold tooltipTitle">I&apos;m Interactive!</h3>
-                <p className="black">
-                  The Innovation Roadmap is interactive. Hover over items to
-                  learn more about them.
-                </p>
-              </Box>
-            </>
-          }
-        >
-          <Container>
-            <Image
-              src={Images.rainbowRoad}
-              alt="green grass background for many buildings"
-            />
-          </Container>
-        </HtmlTooltip> */}
-        <Barriers />
       </div>
     </>
   )
