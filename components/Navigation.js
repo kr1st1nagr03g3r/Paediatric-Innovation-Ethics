@@ -1,37 +1,34 @@
 import * as React from 'react'
-import MenuUnstyled from '@mui/base/MenuUnstyled'
-import MenuItemUnstyled, {
-  menuItemUnstyledClasses,
-} from '@mui/base/MenuItemUnstyled'
-import PopperUnstyled from '@mui/base/PopperUnstyled'
-import { styled } from '@mui/system'
 import styles from '../styles/Nav.module.css'
 import Link from 'next/link'
 import Logo from './Logo'
 import Container from '@mui/material/Container'
 import { useState } from 'react'
+import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded'
+import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded'
+import CloseIcon from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Menu'
 
+// $ TOGGLE HIDDEN TEXT COMPONENT & ARROW TOGGLE
 const ToggleHiddenText = () => {
   const [show, setShow] = useState(true)
+
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  const handleToggle = () => {
+    setNavbarOpen((prev) => !prev)
+  }
+
   return (
     <>
       <style jsx>{`
-        .content {
-          font-size: 16px;
-          color: ghostwhite;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          letter-spacing: 2px;
-          font-weight: bold;
-        }
         .navDropdown {
           background: #2f2f2f;
         }
-
         .dropdownItem {
           position: absolute;
-          background: pink;
+          background: #2f2f2f;
+          box-shadow: #00000057 0 0 20px 6px;
           top: 100px;
           display: flex;
           flex-direction: column;
@@ -41,7 +38,8 @@ const ToggleHiddenText = () => {
           z-index: 10;
           padding: 20px;
         }
-        .dropdownContainer {
+        .dropdownContainer,
+        .content {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -52,14 +50,41 @@ const ToggleHiddenText = () => {
           font-family: 'Nunito';
           padding: 0px;
         }
+        .arrowIcon {
+          background: none;
+          border: none;
+          color: white;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
       `}</style>
       <section>
-        <div className="content">
+        <div>
           <div className="dropdownContainer">
-            <div onClick={() => setShow(!show)}>
-              <button className="navDropdown">
-                <Link href="">MODEL OVERVIEW</Link>
-              </button>
+            <div
+              onClick={() => setShow(!show)}
+              className={styles.buttonWrapper}
+            >
+              <div className="content">
+                <button onClick={handleToggle}>
+                  {navbarOpen ? (
+                    <div>
+                      <span className="arrowIcon">
+                        <Link href="">MODEL OVERVIEW</Link>
+                        <ArrowDropDownRoundedIcon />
+                      </span>
+                    </div>
+                  ) : (
+                    <div>
+                      <span className="arrowIcon">
+                        <Link href="">MODEL OVERVIEW</Link>
+                        <ArrowLeftRoundedIcon />
+                      </span>
+                    </div>
+                  )}
+                </button>
+              </div>
             </div>
             {show ? null : (
               <div className="dropdownItem">
@@ -87,22 +112,102 @@ const ToggleHiddenText = () => {
   )
 }
 
-export default function Navigation() {
+// ^ HAMBURGER COMPONENT MOBILE 🍔
+export function Hamburger() {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  const handleToggle = () => {
+    setNavbarOpen((prev) => !prev)
+  }
+  const [show, setShow] = useState(true)
+
   return (
-    <Container maxWidth={false}>
-      <div className={styles.navbar}>
-        <Logo />
-        <div className={styles.navContent}>
-          <Link href="/">HOME</Link>
-          <Link href="/research">RESEARCH</Link>
-          {/* DROPDOWN START */}
-          <ToggleHiddenText />
-          {/* DROPDOWN END */}
-          <Link href="/contact">CONTACT</Link>
-        </div>
-      </div>
-    </Container>
+    <>
+      <style jsx>{`
+        button {
+          background: none;
+          color: ghostwhite;
+          border: none;
+          font-family: 'Nunito';
+          padding: 30px 0px 0px 20px;
+        }
+        .logo {
+          position: absolute;
+          left: 50%;
+          margin: 10px 0px 0px -50px;
+        }
+        .dropdownContent {
+          z-index: 10 !important;
+          background: #2f2f2f;
+        }
+      `}</style>
+      <Container maxWidth={false} disableGutters={true}>
+        <Container
+          maxWidth="xl"
+          disableGutters={true}
+          sx={{
+            display: { xs: 'flex', sm: 'flex', lg: 'none' },
+            flexDirection: 'column',
+            height: '90px',
+            backgroundColor: '#2f2f2f',
+          }}
+        >
+          <div className="dropdownContent">
+            <div className="logo">
+              <Logo />
+            </div>
+            <div onClick={() => setShow(!show)}>
+              <button className="emoji " onClick={handleToggle}>
+                {navbarOpen ? (
+                  <div className={styles.rotateCenter}>
+                    <CloseIcon />
+                  </div>
+                ) : (
+                  <div className={styles.flipHorizontalBottom}>
+                    <MenuIcon />
+                  </div>
+                )}
+              </button>
+              {show ? null : (
+                <div className={styles.navbarMobile}>
+                  <Link href="/">HOME</Link>
+                  <Link href="/research">RESEARCH</Link>
+                  {/* DROPDOWN START */}
+
+                  {/* DROPDOWN END */}
+                  <Link href="/contact">CONTACT</Link>
+                </div>
+              )}
+            </div>
+          </div>
+        </Container>
+      </Container>
+    </>
   )
 }
 
-//  <Link href="/contact">Hello</Link>
+// $ NAVIGATION COMPONENT DESKTOP
+export default function Navigation() {
+  return (
+    <Container maxWidth={false} disableGutters={true}>
+      <Container
+        maxWidth="xl"
+        disableGutters={true}
+        sx={{ display: { xs: 'none', sm: 'none', lg: 'block' } }}
+      >
+        <div className={styles.navbar}>
+          <Logo />
+          <div className={styles.navContent}>
+            <Link href="/">HOME</Link>
+            <Link href="/research">RESEARCH</Link>
+            {/* DROPDOWN START */}
+            <ToggleHiddenText />
+            {/* DROPDOWN END */}
+            <Link href="/contact">CONTACT</Link>
+          </div>
+        </div>
+      </Container>
+      <Hamburger />
+    </Container>
+  )
+}
