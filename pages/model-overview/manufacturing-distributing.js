@@ -38,7 +38,6 @@ export default function Drugdiscovery() {
         sx={{ background: '#00a122', padding: '60px 0px' }}
       >
         <Container maxWidth="lg">
-          {' '}
           <p className="containerGlobal text-center px-[50px] py-[60px]">
             Following regulatory approval for clinical use, developers must then
             manufacture and develop the drug at commercial scale. This involves
