@@ -1,9 +1,6 @@
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
-import styles from '../styles/Research.module.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-import Images from '../public/images/research'
-import Image from 'next/image'
 import { Box, Container } from '@mui/material'
 import BarriersDarkRoad from './BarriersDarkRoad'
 
@@ -26,7 +23,7 @@ export default function RoadmapTab00() {
     <>
       <style jsx>{``}</style>
       <div>
-        <Container className={styles.roadmapInfo}>
+        <Container maxWidth="lg">
           <p>
             The Innovation Roadmap is a representation of how scientific
             research moves from “bench to bedside,” specifically in the context
