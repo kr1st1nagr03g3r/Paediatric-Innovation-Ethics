@@ -106,7 +106,6 @@
 .h2 {
   font-size: 30px;
   font-weight: 700;
-  text-shadow: 3px 3px 3px #00000096;
 }
 
 .title {
@@ -120,28 +119,20 @@
   align-items: center;
 }
 
-.DDdot,
-.DDPCdot,
-.PCdot,
-.INDdot,
-.CTdot,
-.NDAdot,
-.MandDDot {
+.DDdot {
   margin-right: 30px;
   height: 30px;
   width: 30px;
-  margin-top: 25px;
+  background: red;
   position: relative;
   z-index: 20;
   border-radius: 50%;
-  box-shadow: 3px 3px 3px #00000096;
-}
-
-.DDdot {
-  background: red;
 }
 
 .DDPCdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: rgb(240, 75, 56);
   background: -moz-linear-gradient(
     100deg,
@@ -159,28 +150,60 @@
     rgba(242, 222, 33, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f04b38",endColorstr="#f2de21",GradientType=1);
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
 }
 
 .PCdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: #f2de21;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
 }
 
 .INDdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: #3fb5dc;
-
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
   border: 1px solid darkgrey;
 }
 
 .CTdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: #912af4;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
 }
 
 .NDAdot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: #ff9900;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
 }
 
 .MandDDot {
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
   background: #70ff00;
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
 }
 
 .phases {

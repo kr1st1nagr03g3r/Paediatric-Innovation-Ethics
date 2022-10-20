@@ -9,25 +9,35 @@ import ArrowLeft from '../public/images/arrowLeft.png'
 import ArrowRight from '../public/images/arrowRight.png'
 import Clouds from '../components/Clouds'
 
+
 const CarouselDD = () => {
   return (
+
     <div style={{ height: '490px' }}>
+
       <Clouds />
 
       <span className={styles.title}>
-        <div className={styles.DDdot}> </div>
+        <div className={styles.DDdot}>  </div>
         <h2 className={styles.h2}>Drug Discovery</h2>
       </span>
 
       {/* BARRIERS */}
       <div className={styles.imagesTop}>
         <Link href="#fundingAgency">
-          <Image src={Images.redDrugDiscovery} alt="" />
+          <Image src={Images.redFundingAgency} alt="" />
         </Link>
 
         <Link href="#TTO">
           <Image src={Images.redTTO} alt="" />
         </Link>
+
+
+        {/* <div className="next">
+          <Image src={Images.ghostUniversity} alt="" />
+        </div> */}
+
+
       </div>
 
       {/* ROADBLOCKS */}
@@ -40,6 +50,7 @@ const CarouselDD = () => {
           <Image src={Images.shadedStopSign} alt="" />
         </Link>
 
+
         <Link href="#basicScience">
           <Image src={Images.shadedBasicScience} alt="" />
         </Link>
@@ -47,13 +58,28 @@ const CarouselDD = () => {
         <Link href="#dataSharing">
           <Image src={Images.shadedPylons} alt="" />
         </Link>
+
+
+
+
+
+
+
+
+
+
       </div>
+
+
 
       {/* ROAD */}
 
       <div className={styles.road}>
         <Image layout="fill" objectFit="cover" src={RedRoad} alt="" />
       </div>
+
+
+
 
       {/* ARROWS */}
       <div className={styles.arrows}>
@@ -63,11 +89,25 @@ const CarouselDD = () => {
         <Link href="/model-overview/drug-discovery-pre-clinical">
           <Image src={ArrowRight} alt="" />
         </Link>
+
+
       </div>
+
+
+
+
+
+
+
 
       <div style={{ height: '265px', background: '#6AD6E4' }}></div>
       <div style={{ height: '150px', background: '#00A122' }}></div>
+
+
+
+
     </div>
+
   )
 }
 

@@ -1,179 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 * {
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  font-display: block !important; /* Fix flickering */
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #2f2f2f;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: ghostwhite;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-p {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: ghostwhite;
-  font-size: 18px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 3rem 0 1.38rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
-}
-
-h2 {
-  font-size: 2.441rem;
-}
-
-h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-small,
-.text_small {
-  font-size: 0.8rem;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.center {
-  display: flex !important;
-  flex-direction: column !important;
-  flex-wrap: wrap !important;
-  align-content: center !important;
-  align-items: center !important;
-}
-
-.MuiButtonBase-root.MuiTab-root.Mui-selected {
-  color: ghostwhite !important;
-  text-transform: none;
-}
-
-.MuiButtonBase-root {
-  text-transform: none !important;
-  font-family: 'Nunito', sans-serif !important;
-  font-size: inherit !important;
-}
-
-.MuiButton-root {
-  color: red;
-  text-transform: none;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 18px;
-  background-color: #dcdcdc;
-  padding: 12px 24px;
-  border-radius: 25px;
-  color: #1e1d1d;
-  transition: all 150ms ease;
-  cursor: pointer;
-  border: none;
-}
-
-.MuiButton-root:hover {
-  background-color: #a9a9a9;
-}
-
-.MuiButton-root.active {
-  background-color: #808080;
-}
-
-.noBackground {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: none;
-}
-
-.footer {
-  background-color: #2f2f2f;
-}
-
-.vheight {
-  min-height: 100vh;
-}
-
-.mobile {
-  display: none;
-}
-
-.desktop {
-  display: flex;
-}
-
-.researchButtons {
-  color: ghostwhite;
-  border: 1px solid ghostwhite;
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 10px;
-}
-
-.researchButtons:hover {
-  background: darkgrey;
-}
-
-.researchButtonPanel {
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.button {
-  text-transform: none !important;
-  padding: 15px 30px !important;
-  text-decoration: none !important;
-  color: white !important;
-  font-size: 20px !important;
-  border: 1px solid white !important;
-  border-radius: 80px !important;
-  margin: 30px 0px !important;
-  font-size: 18px;
-}
-
-.Mui-selected {
-  color: ghostwhite !important;
 }
 
 .white {
@@ -221,7 +52,7 @@ small,
 }
 
 .green {
-  background: #67dd09;
+  background: #70ff00;
   color: black;
 }
 
@@ -231,41 +62,148 @@ small,
 }
 
 .purple {
-  background: #732db5;
+  background: #912af4;
   color: ghostwhite;
 }
 
-.fade {
-  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+span.tabItem {
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.tooltipSize {
-  width: 130px;
-  height: 130px;
+@import url('https://fonts.googleapis.com/css?family=Nunito:400');
+
+html {
 }
 
-.shadow {
-  z-index: -1;
-  border-radius: 50%;
-  display: inline-block;
-
-  background: -moz-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.5088410364145659) 0%,
-    rgba(255, 255, 255, 0) 49%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.5088410364145659) 0%,
-    rgba(255, 255, 255, 0) 49%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.5088410364145659) 0%,
-    rgba(255, 255, 255, 0) 49%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #555;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #1e1d1d;
+  font-size: 112.5%;
 }
+
+a {
+  text-decoration: none;
+}
+
+.containerGlobal {
+  width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.center {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  align-content: center !important;
+  align-items: center !important;
+}
+
+.footer {
+  background: rgb(51, 51, 51);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(85, 85, 85, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333333",endColorstr="#555555",GradientType=1);
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+tr,
+td {
+  /* border: 1px solid black; */
+}
+
+td {
+  width: 20%;
+  height: 100%;
+  /* opacity: 20%; */
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 808px is the width where the nav begins to crumple */
 
 @media only screen and (max-width: 808px) {
   .mobile {
@@ -275,37 +213,66 @@ small,
   .desktop {
     display: none;
   }
-
-  p {
-    font-size: 14px;
+  /* 
+  h1.logo {
+    font-size: 50px;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 2rem 0 1rem;
-    line-height: 1.2;
-  }
-
-  h1 {
-    font-size: 2.441rem;
-  }
-
+  .title,
   h2 {
-    font-size: 1.953rem;
+    font-size: 22px;
+    line-height: 32px;
+    padding: 0px;
   }
 
+  .subtitle,
   h3 {
-    font-size: 1.563rem;
+    font-size: 24px;
+    padding: 25px 0px 30px 0px;
+    font-weight: 500;
   }
 
-  h4 {
-    font-size: 1.25rem;
-  }
+  .para,
+  p {
+    font-size: 16px;
+    font-weight: 100;
+  } */
+}
 
-  h5 {
-    font-size: 1rem;
-  }
+.researchButtons {
+  color: ghostwhite;
+  border: 1px solid ghostwhite;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.researchButtons:hover {
+  background: darkgrey;
+}
+
+.buttonGroupBox {
+  margin: 60px 0px;
+}
+
+.researchButtonPanel {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.button {
+  text-transform: none !important;
+  padding: 15px 30px !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 20px !important;
+  border: 1px solid white !important;
+  border-radius: 80px !important;
+  margin: 30px 0px !important;
+}
+
+.Mui-selected {
+  color: ghostwhite !important;
 }
