@@ -38,24 +38,19 @@ export default function Drugdiscovery() {
         disableGutters={true}
         sx={{ background: '#00a122', padding: '60px 0px' }}
       >
-        <Container maxWidth="lg">
-          <div>
-            <div>
-              <p>
-                Drug discovery is the first phase of pharmaceutical R&D. At this
-                stage, therapeutic targets and their molecular mechanisms are
-                identified, isolated, and characterized. If a target is
-                demonstrated to have a functional role in the disease, a
-                chemical lead with an affinity and selectivity for the target is
-                identified and optimized. Researchers test whether the compound
-                is “druggable” and can bind to the target by evaluating its
-                pharmacokinetic profile, specifically in terms of absorption,
-                metabolism, and excretion. The compound and additional drug
-                components are then formulated to produce a bioavailable, stable
-                dosage for a specific route administration.
-              </p>
-            </div>
-          </div>
+        <Container maxWidth="lg" sx={{ paddingBottom: '30px' }}>
+          <p>
+            Drug discovery is the first phase of pharmaceutical R&D. At this
+            stage, therapeutic targets and their molecular mechanisms are
+            identified, isolated, and characterized. If a target is demonstrated
+            to have a functional role in the disease, a chemical lead with an
+            affinity and selectivity for the target is identified and optimized.
+            Researchers test whether the compound is “druggable” and can bind to
+            the target by evaluating its pharmacokinetic profile, specifically
+            in terms of absorption, metabolism, and excretion. The compound and
+            additional drug components are then formulated to produce a
+            bioavailable, stable dosage for a specific route administration.
+          </p>
         </Container>
 
         <Card>

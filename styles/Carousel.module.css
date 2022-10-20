@@ -73,7 +73,7 @@
   cursor: pointer;
 }
 
-.cloud {
+.cloudWrapper {
   opacity: 50%;
   display: flex;
   position: absolute;
@@ -85,22 +85,30 @@
 .cloud01 {
   padding-top: 70px;
   opacity: 1;
+  margin-right: 5px;
 }
 
 .cloud02 {
-  padding: 20px;
+  top: 30px;
+  padding: 50px;
+  margin-right: 5px;
 }
 
 .cloud03 {
   padding: 90px;
+  margin-right: 5px;
+  margin-top: 80px;
 }
 
 .cloud04 {
   padding-top: -50px;
+  margin-right: 5px;
 }
 
 .cloud05 {
+  top: 30px;
   padding: 90px;
+  margin-right: 5px;
 }
 
 .h2 {
@@ -256,5 +264,57 @@
 
   100% {
     transform: translateX(-250px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .imagesTop {
+    height: 150px;
+  }
+  .imagesTopCT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    padding: 40px;
+  }
+
+  .buildings {
+    padding: 10px;
+  }
+
+  .buildingSpecial {
+    padding-top: 30px;
+  }
+
+  .sky {
+    height: 100px;
+  }
+
+  .road {
+    top: 542px;
+  }
+
+  .imagesBottom {
+    top: 563px;
+  }
+  .titleSpecial {
+    width: 90%;
+    padding-left: 60px;
+  }
+
+  .cloud {
+    top: 100px;
+  }
+
+  .cloud01,
+  .cloud02,
+  .cloud03,
+  .cloud04,
+  .cloud05 {
+    top: 100px;
+  }
+
+  .cloud02 {
+    padding: none;
   }
 }

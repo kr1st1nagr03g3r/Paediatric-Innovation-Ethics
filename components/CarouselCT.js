@@ -19,34 +19,36 @@ const CarouselDDPC = () => {
       </span>
 
       {/* BARRIERS */}
-      <div className={styles.imagesTopCT}>
-        <div>
-          <h2 className={styles.phases}>P1</h2>
-          <Link href="#AMC">
-            <Image src={Images.CTAMC} alt="" />
-          </Link>
-        </div>
 
-        <div>
-          <h2 className={styles.phases}>P2</h2>
-          <Link href="#regagency">
-            <Image src={Images.CTRegA} alt="" />
-          </Link>
-        </div>
-        <div>
-          <h2 className={styles.phases}></h2>
-          <Link href="#industry">
-            <Image src={Images.CTIndustry} alt="" />
-          </Link>
-        </div>
-        <div>
-          <h2 className={styles.phases}>P3</h2>
-          <Link href="#CRO">
-            <Image src={Images.CTCRO} alt="" />
-          </Link>
+      <div>
+        <div className={styles.imagesTopCT}>
+          <div className={styles.buildings}>
+            <h2 className={styles.phases}>P1</h2>
+            <Link href="#AMC">
+              <Image src={Images.CTAMC} alt="" />
+            </Link>
+          </div>
+
+          <div className={styles.buildings}>
+            <h2 className={styles.phases}>P2</h2>
+            <Link href="#regagency">
+              <Image src={Images.CTRegA} alt="" />
+            </Link>
+          </div>
+          <div className={styles.buildingSpecial}>
+            <h2 className={styles.phases}></h2>
+            <Link href="#industry">
+              <Image src={Images.CTIndustry} alt="" />
+            </Link>
+          </div>
+          <div className={styles.buildings}>
+            <h2 className={styles.phases}>P3</h2>
+            <Link href="#CRO">
+              <Image src={Images.CTCRO} alt="" />
+            </Link>
+          </div>
         </div>
       </div>
-
       {/* ROADBLOCKS */}
       <div className={styles.imagesBottom}>
         <Link href="#humancapital">
@@ -86,8 +88,14 @@ const CarouselDDPC = () => {
         </Link>
       </div>
 
-      <div style={{ height: '265px', background: '#6AD6E4' }}></div>
-      <div style={{ height: '150px', background: '#00A122' }}></div>
+      <div
+        className={styles.sky}
+        style={{ height: '265px', background: '#6AD6E4' }}
+      ></div>
+      <div
+        className="grass"
+        style={{ height: '150px', background: '#00A122' }}
+      ></div>
     </div>
   )
 }

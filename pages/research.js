@@ -66,8 +66,6 @@ export default function BasicTabs() {
           font-family: Nunito;
           font-size: 1.25rem;
         }
-
-        }
       `}</style>
       <Navigation />
 
