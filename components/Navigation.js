@@ -161,8 +161,10 @@ export function Hamburger() {
           margin: 10px 0px 0px -50px;
         }
         .dropdownContent {
-          z-index: 10 !important;
+          z-index: 30 !important;
           background: #2f2f2f;
+              border-radius: 50px;
+           
         }
           .mobileModelOverview {
             display: flex;

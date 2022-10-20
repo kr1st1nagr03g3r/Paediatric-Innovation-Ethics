@@ -13,6 +13,7 @@ import RoadmapTab02 from '../components/RoadmapTab02'
 import RoadmapTab03 from '../components/RoadmapTab03'
 function TabPanel(props) {
   const { children, value, index, ...other } = props
+
   return (
     <>
       <div
@@ -65,17 +66,16 @@ export default function BasicTabs() {
           font-family: Nunito;
           font-size: 1.25rem;
         }
-         {
-          text-transform: none;
-          color: ghostwhite;
-          font-family: Nunito;
-          font-size: 1.25rem;
+         
+          @media only screen and (max-width: 1200px) {
+
+          }
         }
       `}</style>
       <Navigation />
 
       <Container
-        maxWidth
+        maxWidth={false}
         sx={{
           backgroundColor: '#007100',
           paddingTop: '30px',
@@ -83,21 +83,15 @@ export default function BasicTabs() {
       >
         <h2 className="center">The Innovation Roadmap</h2>
 
-        {/* //@ TABS BEGIN */}
-        <Box
-          sx={{
-            width: '100%',
-            minHeight: '500px',
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-          }}
-        >
-          <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
+        <Container className="center">
+          <div className="verticalTabs">
             <Tabs
               textColor="inherit"
-              allowScrollButtonsMobile={true}
               value={value}
+              flexContainer
+              variant="scrollable"
+              scrollButtons={true}
+              allowScrollButtonsMobile={true}
               onChange={handleChange}
               aria-label="basic tabs"
               sx={{
@@ -105,6 +99,7 @@ export default function BasicTabs() {
                 color: 'ghostwhite',
                 fontFamily: 'Nunito',
                 fontSize: '1.25rem',
+                fontSize: { xs: '12px', lg: '1.25rem' },
               }}
             >
               <Tab className="tabStyle" label="Roadmap" {...a11yProps(0)} />
@@ -124,7 +119,7 @@ export default function BasicTabs() {
                 {...a11yProps(3)}
               />
             </Tabs>
-          </Box>
+          </div>
 
           {/* //@ INDEX 00 */}
           <TabPanel value={value} index={0} id="tab">
@@ -145,7 +140,7 @@ export default function BasicTabs() {
           <TabPanel value={value} index={3}>
             <RoadmapTab03 />
           </TabPanel>
-        </Box>
+        </Container>
       </Container>
       <Footer />
     </>

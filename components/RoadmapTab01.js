@@ -1,5 +1,4 @@
 import * as React from 'react'
-import styles from '../styles/Research.module.css'
 import Images from '../public/images/index'
 import Image from 'next/image'
 import Container from '@mui/material/Container'
