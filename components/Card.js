@@ -1,16 +1,33 @@
-const Card = props => (
-    <>
-        <div className="bg-[#00A122] justify-center flex flex-row">
-            <div className="bg-[#C4C4C4] w-[960px]">
-                <div className="bg-[#fff] mt-8 mx-8">
-                    <div className="m-[0.5rem]">
-                        <div className="basis-3/4 py-[30px]"><div className="flex flex-row justify-center align-center content-center">{props.children}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </>
-);
+import Container from '@mui/material/Container'
 
-export default Card
+export default function Card({ children }) {
+  return (
+    <>
+      <style jsx>
+        {`
+          p {
+            color: black;
+          }
+          .wrapper {
+            background: #c4c4c4;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          }
+          .inner {
+            background: ghostwhite;
+            margin: 20px 20px 10px 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+          }
+        `}
+      </style>
+      <Container maxWidth="lg" disableGutters={true}>
+        <div className="wrapper">
+          <div className="inner">{children}</div>
+        </div>
+      </Container>
+    </>
+  )
+}

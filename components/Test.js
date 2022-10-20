@@ -1,15 +1,9 @@
-import React from 'react';
+const htmlString = `<h1>I'm a string with HTML!</h1>`
 
-
-class Test extends React.PureComponent {
-    state = {  }
-    render() { 
-        return ( 
-            <div>
-                <p>Hello</p>
-            </div>
-         );
-    }
+export default function Test() {
+  return (
+    <>
+      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+    </>
+  )
 }
- 
-export default Test;
