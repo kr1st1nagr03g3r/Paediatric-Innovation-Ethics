@@ -29,7 +29,7 @@ export default function Home() {
             innovation in this sector, based on extensive in-depth qualitative
             and ethnographic research.
           </h3>
-          <Box
+          <div
             className="desktop"
             sx={{ display: 'flex', justifyContent: 'center' }}
           >
@@ -39,7 +39,7 @@ export default function Home() {
               width="960"
               alt="children playing and painting with their teacher"
             />
-          </Box>
+          </div>
           <div className="mobile">
             <Image
               src={Images.girlPlaying}
