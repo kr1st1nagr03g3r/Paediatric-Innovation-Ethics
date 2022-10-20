@@ -107,7 +107,6 @@
 
 .cloud05 {
   top: 30px;
-  padding: 90px;
   margin-right: 5px;
 }
 
@@ -298,6 +297,11 @@
     top: 563px;
   }
   .titleSpecial {
+    width: 90%;
+    padding-left: 60px;
+  }
+
+  .titleSpecialPC {
     width: 90%;
     padding-left: 60px;
   }

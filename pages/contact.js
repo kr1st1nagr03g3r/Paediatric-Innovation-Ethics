@@ -1,5 +1,5 @@
 import Container from '@mui/material/Container'
-import Card from '@mui/material/Card'
+
 import React from 'react'
 import Navigation from '../components/Navigation'
 import Image from 'next/image'
@@ -34,6 +34,11 @@ export default function Contact() {
           align-items: center;
           justify-content: center;
         }
+        @media only screen and (max-width: 1200px) {
+          .half {
+            width: 100%;
+          }
+        }
       `}</style>
 
       <Navigation />
@@ -50,14 +55,17 @@ export default function Contact() {
             officia dolore cupidatat.
           </h3>
           <h4 className="center">Jennifer Fishman, PhD</h4>
-          <Card
+          <Container
             sx={{
               background: 'inherit',
-              boxShadow: 'none',
+              ContainerShadow: 'none',
               display: 'flex',
-              flexDirection: 'row',
               flexWrap: 'wrap',
               alignItems: 'center',
+              flexDirection: {
+                xs: 'column',
+                lg: 'row',
+              },
             }}
           >
             <div className="half textLeft">
@@ -85,7 +93,7 @@ export default function Contact() {
                 />
               </span>
             </div>
-          </Card>
+          </Container>
           <div className="centerButton">
             <Button href="mailto:jennifer.fishman@mcgill.ca">Contact</Button>
           </div>
@@ -100,14 +108,17 @@ export default function Contact() {
         >
           <Container maxWidth="lg">
             <h4 className="center">Peggy Chiappetta, PhD</h4>
-            <Card
+            <Container
               sx={{
                 background: 'inherit',
-                boxShadow: 'none',
+                ContainerShadow: 'none',
                 display: 'flex',
-                flexDirection: 'row',
                 flexWrap: 'wrap',
                 alignItems: 'center',
+                flexDirection: {
+                  xs: 'column',
+                  lg: 'row',
+                },
               }}
             >
               <div className="half imageCenter">
@@ -139,20 +150,23 @@ export default function Contact() {
                   Contact
                 </Button>
               </div>
-            </Card>
+            </Container>
           </Container>
         </Container>
         {/* KASIA */}
         <Container maxWidth="lg">
           <h4 className="center">Kasia Tolwinski, PhD</h4>
-          <Card
+          <Container
             sx={{
               background: 'inherit',
-              boxShadow: 'none',
+              ContainerShadow: 'none',
               display: 'flex',
-              flexDirection: 'row',
               flexWrap: 'wrap',
               alignItems: 'center',
+              flexDirection: {
+                xs: 'column',
+                lg: 'row',
+              },
             }}
           >
             <div className="half textLeft">
@@ -177,7 +191,7 @@ export default function Contact() {
                 />
               </span>
             </div>
-          </Card>
+          </Container>
           <div className="centerButton">
             <Button href="mailto:kasia.tolwinski@mail.mcgill.ca">
               Contact

@@ -6,7 +6,7 @@ import { Container } from '@mui/system'
 
 const Clouds = () => {
   return (
-    <Container>
+    <Container maxWidth="lg">
       <div className={styles.cloudWrapper}>
         <div className={styles.cloud01}>
           <Image
