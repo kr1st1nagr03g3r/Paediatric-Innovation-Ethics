@@ -2,7 +2,7 @@ import * as React from 'react'
 import styles from '../styles/Research.module.css'
 import Images from '../public/images/index'
 import Image from 'next/image'
-import { Box, Container } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
 import ImageTest from './Barriers'
 import Barriers from './Barriers'
 
@@ -31,6 +31,23 @@ export default function RoadmapTab02() {
         .absolute {
           position: absolute;
         }
+
+           span.hoverInfo {
+  display: flex;
+}
+span.centerButton {
+  display: none !important;
+}
+          @media only screen and (max-width: 1200px) {
+span.hoverInfo {
+  display: none !important;
+}
+span.centerButton.center {
+  padding: 20px 0px;
+  display: flex !important;
+}
+          }
+        }
       `}</style>
       <div>
         <Container maxWidth="lg">
@@ -44,12 +61,12 @@ export default function RoadmapTab02() {
             <br></br>
             Hover over the buildings to learn more...
           </p>
-          {/* <Box className={styles.wrapper}>
-             <Image
-              src={Images.researchBackground}
-              alt="green grass background for many buildings"
-            /> 
-          </Box> */}
+          <span className="hoverInfo center">
+            <p>Hover over these items to learn more.</p>
+          </span>
+          <span className="centerButton center">
+            <Button href="/model-overview/drug-discovery">Learn More</Button>
+          </span>
           <Barriers />
         </Container>
       </div>

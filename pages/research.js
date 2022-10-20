@@ -66,10 +66,7 @@ export default function BasicTabs() {
           font-family: Nunito;
           font-size: 1.25rem;
         }
-         
-          @media only screen and (max-width: 1200px) {
 
-          }
         }
       `}</style>
       <Navigation />

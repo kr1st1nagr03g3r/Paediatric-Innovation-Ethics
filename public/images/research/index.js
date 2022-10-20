@@ -18,6 +18,9 @@ const Images = {
   rainbowRoad: require('../research/rainbowRoad.svg').default,
   redDrugDiscovery: require('../research/redDrugDiscovery.svg').default,
   roadmap: require('../research/roadmap.png').default,
+  roadmapMobile: require('../research/roadmapMobile.png').default,
+  barriersMobile: require('../research/barriersMobile.png').default,
+  buildingsMobile: require('../research/buildingsMobile.png').default,
 }
 
 export default Images

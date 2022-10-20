@@ -3,6 +3,7 @@ import styles from '../styles/Research.module.css'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Buildings from './Buildings'
+import { Button } from '@mui/material'
 
 export default function RoadmapTab03() {
   return (
@@ -15,6 +16,22 @@ export default function RoadmapTab03() {
         .absolute {
           position: absolute;
         }
+         span.hoverInfo {
+  display: flex;
+}
+span.centerButton {
+  display: none !important;
+}
+          @media only screen and (max-width: 1200px) {
+span.hoverInfo {
+  display: none !important;
+}
+span.centerButton.center {
+  padding: 20px 0px;
+  display: flex !important;
+}
+          }
+        }
       `}</style>
       <div>
         <Container className={styles.research}>
@@ -25,11 +42,16 @@ export default function RoadmapTab03() {
             bottlenecks that slow movement along the “road” to a trickle, or
             broader, more consequential obstructions that bring movement to a
             grinding halt.
-            <br></br>
-            Hover over the buildings to learn more...
+            <br></br> <br></br>
+            <span className="hoverInfo center">
+              <p>Hover over these items to learn more.</p>
+            </span>
+            <span className="centerButton center">
+              <Button href="/model-overview/drug-discovery">Learn More</Button>
+            </span>
           </p>
-          <Box className={styles.wrapper}></Box>
         </Container>
+
         <Buildings />
       </div>
     </>

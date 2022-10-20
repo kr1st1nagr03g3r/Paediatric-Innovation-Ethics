@@ -54,27 +54,53 @@ export default function Buildings() {
           }
 
           .buildingPosition01 {
-            top: 100px;
-            left: 100px;
+            top: 76px;
+            left: 32px;
           }
           .buildingPosition02 {
-            top: 350px;
-            left: 100px;
+            top: 320px;
+            left: 32px;
           }
           .buildingPosition03 {
-            top: 600px;
-            left: 100px;
+            top: 530px;
+            left: 32px;
           }
-          .buildingPosition04 {
-            top: 240px;
-            left: 53px;
+          .mobileBarriers {
+            display: none;
+          }
+
+          @media only screen and (max-width: 1200px) {
+            .absolute,
+            .relative,
+            .rainbowRoad {
+              display: none;
+            }
+            .mobileBarriers {
+              display: block;
+            }
           }
         `}
       </style>
       <Container>
         <div className="parent">
+          <div className="mobileBarriers">
+            <Image
+              src={Images.buildingsMobile}
+              width={1150}
+              height={900}
+              alt="green grass background for many buildings"
+            />
+          </div>
+
           <div className="relative">
             <Image
+              src={Images.rainbowRoad}
+              width={1150}
+              height={900}
+              alt="green grass background for many buildings"
+            />
+            <Image
+              className="rainbowRoad"
               src={Images.rainbowRoad}
               width={1150}
               height={900}

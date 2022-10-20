@@ -43,6 +43,7 @@ export default function TooltipPurple() {
         }
       `}</style>
       <HtmlTooltip
+        enterTouchDelay={0}
         placement="top"
         followCursor={false}
         title={

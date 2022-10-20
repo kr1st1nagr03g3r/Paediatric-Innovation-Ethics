@@ -2,7 +2,7 @@ import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import styles from '../../styles/Research.module.css'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-
+import { useState } from 'react'
 import { Box, Button, Container } from '@mui/material'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
@@ -20,6 +20,8 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 }))
 
 export default function TooltipBlue() {
+  const [showTooltip, setShowTooltip] = useState(false)
+
   return (
     <>
       <style jsx>{`
@@ -43,7 +45,10 @@ export default function TooltipBlue() {
         }
       `}</style>
       <HtmlTooltip
-        placement="top"
+        enterTouchDelay={0}
+        // open={showTooltip}
+        // onOpen={() => setShowTooltip(true)}
+        // onClose={() => setShowTooltip(false)}
         followCursor={false}
         title={
           <>
@@ -60,6 +65,7 @@ export default function TooltipBlue() {
                 color="primary"
                 variant="contained"
                 href="/model-overview/ind"
+                // onClick={() => setShowTooltip(!showTooltip)}
               >
                 Learn More
               </Button>

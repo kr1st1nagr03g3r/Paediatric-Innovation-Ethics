@@ -26,7 +26,7 @@ import DDPCResearchTranslation from '../public/images/02drugDiscoveryPreClinical
 import redBasicScience from '../public/images/01drugDiscovery/redBasicScience.svg'
 //MONEY
 import money from '../public/images/money.svg'
-import Tooltip01 from './tooltips/Tooltip01'
+
 import MonkeyDark from './tooltips/MonkeyDark'
 
 export default function BarriersDarkRoad() {
@@ -50,21 +50,43 @@ export default function BarriersDarkRoad() {
             position: absolute;
             display: flex;
             top: 0;
-            left: 0;
+            left: -82px;
           }
 
           .height {
             z-index: 1;
           }
 
-          .size {
-            width: 200px;
-            height: 200px;
+          .mobileRoadmap {
+            display: none;
+          }
+
+          @media only screen and (max-width: 1200px) {
+            .absolute,
+            .relative {
+              display: none;
+            }
+            .mobileRoadmap {
+              display: block;
+            }
           }
         `}
       </style>
-      <Container sx={{ height: '1200px' }}>
+      <Container
+        maxWidth="lg"
+        sx={{
+          height: { sm: '600px', md: '600px', lg: '1200px' },
+        }}
+      >
         <div className="parent">
+          <div className="mobileRoadmap">
+            <Image
+              src={Images.roadmapMobile}
+              width={1150}
+              height={900}
+              alt="green grass background for many buildings"
+            />
+          </div>
           <div className="relative">
             <Image
               src={Images.road00}
@@ -73,7 +95,7 @@ export default function BarriersDarkRoad() {
               alt="green grass background for many buildings"
             />
           </div>
-          <div className="absolute ">
+          <div className="absolute">
             <MonkeyDark
               giraffeOne={{
                 tooltipColour: 'tt01',

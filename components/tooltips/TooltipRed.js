@@ -43,6 +43,7 @@ export default function TooltipRed() {
         }
       `}</style>
       <HtmlTooltip
+        enterTouchDelay={0}
         placement="top"
         followCursor={false}
         title={

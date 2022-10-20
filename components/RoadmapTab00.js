@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
-import { Box, Container } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
 import BarriersDarkRoad from './BarriersDarkRoad'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
@@ -21,7 +21,25 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 export default function RoadmapTab00() {
   return (
     <>
-      <style jsx>{``}</style>
+      <style jsx>{`
+   
+   span.hoverInfo {
+  display: flex;
+}
+span.centerButton {
+  display: none !important;
+}
+          @media only screen and (max-width: 1200px) {
+span.hoverInfo {
+  display: none !important;
+}
+span.centerButton.center {
+  padding: 20px 0px;
+  display: flex !important;
+}
+          }
+        }
+      `}</style>
       <div>
         <Container maxWidth="lg">
           <p>
@@ -34,30 +52,15 @@ export default function RoadmapTab00() {
             on the road, but also presents possibilities for alternative routes
             and travel methods to “hack” the roadmap and existing barriers to
             innovation.<br></br>
-            <br></br>
           </p>
+          <span className="hoverInfo center">
+            <p>Hover over these items to learn more.</p>
+          </span>
+          <span className="centerButton center">
+            <Button href="/model-overview/drug-discovery">Learn More</Button>
+          </span>
         </Container>
-        <HtmlTooltip
-          followCursor={true}
-          title={
-            <>
-              <Box>
-                <h3 className="bold tooltipTitle">I&apos;m Interactive!</h3>
-                <p className="black">
-                  The Innovation Roadmap is interactive. Hover over items to
-                  learn more about them.
-                </p>
-              </Box>
-            </>
-          }
-        >
-          <Container>
-            {/* <Image
-              src={Images.road00}
-              alt="green grass background for many buildings"
-            /> */}
-          </Container>
-        </HtmlTooltip>
+
         <BarriersDarkRoad />
       </div>
     </>

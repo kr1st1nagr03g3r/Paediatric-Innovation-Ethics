@@ -47,8 +47,8 @@ export default function Buildings() {
           .absolute {
             position: absolute;
             display: flex;
-            top: 0;
-            left: 0;
+            top: -111px;
+            left: -104px;
           }
 
           .height {
@@ -59,10 +59,31 @@ export default function Buildings() {
             width: 200px;
             height: 200px;
           }
+          .mobileBarriers {
+            display: none;
+          }
+
+          @media only screen and (max-width: 1200px) {
+            .absolute,
+            .relative {
+              display: none;
+            }
+            .mobileBarriers {
+              display: block;
+            }
+          }
         `}
       </style>
-      <Container>
+      <Container maxWidth="lg" disableGutters={true}>
         <div className="parent">
+          <div className="mobileBarriers">
+            <Image
+              src={Images.barriersMobile}
+              width={1150}
+              height={900}
+              alt="green grass background for many buildings"
+            />
+          </div>
           <div className="relative">
             <Image
               src={Images.rainbowRoad}
