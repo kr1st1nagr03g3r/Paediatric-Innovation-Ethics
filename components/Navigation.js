@@ -206,7 +206,7 @@ export function Hamburger() {
               {show ? null : (
                 <div className={styles.navbarMobile}>
                   <Link href="/">HOME</Link>
-                  <Link href="/research">RESEARCH</Link>
+                  <Link href="/innovation-roadmap">INNOVATION ROADMAP</Link>
                   {/* DROPDOWN START */}
                   <div className="mobileModelOverview">
                     <Link href="">MODEL OVERVIEW:</Link>
@@ -254,7 +254,7 @@ export default function Navigation() {
           <Logo />
           <div className={styles.navContent}>
             <Link href="/">HOME</Link>
-            <Link href="/research">RESEARCH</Link>
+            <Link href="/innovation-roadmap">INNOVATION ROADMAP</Link>
             {/* DROPDOWN START */}
             <ToggleHiddenText />
             {/* DROPDOWN END */}
