@@ -21,6 +21,7 @@ const Images = {
   roadmapMobile: require('../research/roadmapMobile.png').default,
   barriersMobile: require('../research/barriersMobile.png').default,
   buildingsMobile: require('../research/buildingsMobile.png').default,
+  barriersRoadblocks: require('../research/barriersRoadblocks.png').default,
 }
 
 export default Images
