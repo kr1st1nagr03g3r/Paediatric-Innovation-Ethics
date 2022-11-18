@@ -94,14 +94,14 @@ const ToggleHiddenText = () => {
                   {navbarOpen ? (
                     <div>
                       <span className="arrowIcon">
-                        <Link href="">MODEL OVERVIEW</Link>
+                        <Link href="">ROADMAP DETAILS</Link>
                         <ArrowDropDownRoundedIcon />
                       </span>
                     </div>
                   ) : (
                     <div>
                       <span className="arrowIcon">
-                        <Link href="">MODEL OVERVIEW</Link>
+                        <Link href="">ROADMAP DETAILS</Link>
                         <ArrowLeftRoundedIcon />
                       </span>
                     </div>
@@ -209,7 +209,7 @@ export function Hamburger() {
                   <Link href="/innovation-roadmap">INNOVATION ROADMAP</Link>
                   {/* DROPDOWN START */}
                   <div className="mobileModelOverview">
-                    <Link href="">MODEL OVERVIEW:</Link>
+                    <Link href="">ROADMAP DETAILS:</Link>
 
                     <Link href="/model-overview/drug-discovery">
                       DRUG DISCOVERY
