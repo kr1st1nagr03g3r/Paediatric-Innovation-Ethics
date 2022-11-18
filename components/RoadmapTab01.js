@@ -2,19 +2,44 @@ import * as React from 'react'
 import Images from '../public/images/index'
 import Image from 'next/image'
 import Container from '@mui/material/Container'
-import Tooltip from './tooltips/Tooltip'
+import NextLink from 'next/link'
 
 export default function RoadmapTab01() {
   return (
     <>
       <style jsx>{`
+        .styled {
+            padding: 15px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            -webkit-box-shadow: #2f2b2b 3px 3px 12px;
+            -moz-box-shadow: #2f2b2b 3px 3px 12px;
+            box-shadow: #2f2b2b 3px 3px 12px;
+            border: none !important;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            color: black !important;
+            font-size: 18px;
+            width: max-content;
+            height: auto;
+            cursor: pointer;
+          
+          }
         .tooltipContainer {
             width: { sm: '600px', md: '600px', lg: '1200px' }
         }
         span.hoverInfo {
           display: flex;
         }
-  
+  .buttonsPadding {
+display: flex;
+  }
+span.space {
+ margin: 15px !important;
+}
+  }
 
         @media only screen and (max-width: 1200px) {
    
@@ -34,41 +59,73 @@ export default function RoadmapTab01() {
           various obstacles and requires the participation of specific
           stakeholders. <strong>We represent these stages as follows:</strong>
         </p>
-        <p>Click each icon to learn more.</p>
+        <p className="center">Click each button to learn more.</p>
         <div>
           <Container
+            className="spacer"
             maxWidth="lg"
             sx={{
               display: 'flex',
-              justifyContent: 'center',
+              flexDirection: 'column',
+              alignItems: 'center',
             }}
           >
-            {/* //# Tooltips */}
+            {/* //# buttons */}
+            <div className="buttonsPadding">
+              <NextLink href="/model-overview/drug-discovery" passHref>
+                <button className="styled button red">Drug Discovery</button>
+              </NextLink>
 
-            <Tooltip colour="red" text="Drug&nbsp;Discovery" />
-            <Tooltip
-              colour="orangeGradient"
-              text="Drug Discovery&nbsp;/&nbsp;Pre-Clinical"
-            />
-            <Tooltip colour="yellow" text="Pre&nbsp;&ndash;&nbsp;Clinical" />
-            <Tooltip colour="blue" text="IND" />
-            <Tooltip colour="purple" text="Clinical&nbsp;Trials" />
-            <Tooltip colour="orange" text="NDA" />
-            <Tooltip
-              colour="green"
-              text="Manufacturing&nbsp;&amp;&nbsp;Distributing"
-            />
+              <span className="space"></span>
+              <NextLink
+                href="/model-overview/drug-discovery-pre-clinical"
+                passHref
+              >
+                <button className="styled button orangeGradient">
+                  Drug Discovery - Pre Clinical
+                </button>
+              </NextLink>
+              <span className="space"></span>
+              <NextLink href="/model-overview/pre-clinical" passHref>
+                <button className="styled button yellow">Pre Clinical</button>
+              </NextLink>
+            </div>
+            <div className="buttonsPadding">
+              <NextLink href="/model-overview/ind" passHref>
+                <button className="styled button blue">IND</button>
+              </NextLink>
+              <span className="space"></span>
+
+              <NextLink href="/model-overview/clinical-trials" passHref>
+                <button className="styled button purple">
+                  Clinical Trials
+                </button>
+              </NextLink>
+              <span className="space"></span>
+              <NextLink href="/model-overview/nda" passHref>
+                <button className="styled button orange">NDA</button>
+              </NextLink>
+              <span className="space"></span>
+              <NextLink
+                href="/model-overview/manufacturing-distributing"
+                passHref
+              >
+                <button className="styled button green">
+                  Manufacturing and Distributing
+                </button>
+              </NextLink>
+            </div>
           </Container>
         </div>
       </Container>
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <Image
           src={Images.rainbowRoad}
           width={1150}
           height={900}
           alt="green grass background for many buildings"
         />
-      </Container>
+      </Container> */}
     </>
   )
 }

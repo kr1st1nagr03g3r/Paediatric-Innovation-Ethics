@@ -2,7 +2,8 @@ import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import { Box, Button, Container } from '@mui/material'
-import BarriersDarkRoad from './BarriersDarkRoad'
+import Image from 'next/image'
+import Images from '../public/images/research/index'
 
 const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
@@ -22,6 +23,10 @@ export default function RoadmapTab00() {
   return (
     <>
       <style jsx>{`
+
+      .imageSize {
+        margin: 30px 120px;
+      }
    
    span.hoverInfo {
   display: flex;
@@ -37,6 +42,7 @@ span.centerButton.center {
   padding: 20px 0px;
   display: flex !important;
 }
+
           }
         }
       `}</style>
@@ -54,14 +60,17 @@ span.centerButton.center {
             innovation.<br></br>
           </p>
           <span className="hoverInfo center">
-            <p>Hover over these items to learn more.</p>
+            {/* <p>Hover over these items to learn more.</p> */}
           </span>
           <span className="centerButton center">
             <Button href="/model-overview/drug-discovery">Learn More</Button>
           </span>
         </Container>
-
-        <BarriersDarkRoad />
+        <div className="imageSize">
+          <Box>
+            <Image src={Images.roadmap} alt="" width="" height="" />
+          </Box>
+        </div>
       </div>
     </>
   )

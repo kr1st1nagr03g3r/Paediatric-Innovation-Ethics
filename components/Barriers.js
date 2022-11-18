@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Images from '../public/images/research/index'
 // IMAGES
-import barriersRoadblocks from '../public/images/research/barriersRoadblocks.png'
+import buildingsInstitutions from '../public/images/research/buildingsInstitutions.png'
 
 export default function Buildings() {
   return (
@@ -53,7 +53,7 @@ export default function Buildings() {
         `}
       </style>
       <Container maxWidth="lg" disableGutters={true}>
-        <Image src={Images.barriersRoadblocks} alt="" usemap="imageMap" />
+        <Image src={Images.buildingsInstitutions} alt="" usemap="imageMap" />
         <map name="imageMap">
           <area
             target=""

@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Box, Container } from '@mui/material'
+import NextLink from 'next/link'
 
-export default function Tooltip({ colour, text }) {
+export default function Tooltip({ button, className, text, href }) {
   return (
     <>
       <style jsx>
@@ -29,7 +30,16 @@ export default function Tooltip({ colour, text }) {
       </style>
 
       <div className="padding">
-        <button className={`styled ${colour}`}>{text}</button>
+        {/* <button className={`styled ${colour}`}>
+          <a href="${`link`}">{text}</a>
+        </button> */}
+        {/* <NextLink href={href}>
+          {button ? (
+            <button className={className}>{text}</button>
+          ) : (
+            <a className={className}>{text}</a>
+          )}
+        </NextLink> */}
       </div>
     </>
   )
