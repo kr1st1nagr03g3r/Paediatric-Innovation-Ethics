@@ -62,7 +62,7 @@ span.centerButton.center {
             Hover over the buildings to learn more...
           </p>
           <span className="hoverInfo center">
-            <p>Hover over these items to learn more.</p>
+            <p>Click on these items to learn more.</p>
           </span>
           <span className="centerButton center">
             <Button href="/model-overview/drug-discovery">Learn More</Button>

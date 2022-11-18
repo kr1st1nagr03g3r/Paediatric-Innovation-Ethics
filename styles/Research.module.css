@@ -14,20 +14,21 @@
   position: relative;
 }
 
-.MuiBox-root {
-  color: white !important;
-  display: flex;
-  justify-content: center;
+.red,
+.orangeGradient,
+.orange,
+.yellow,
+.green,
+.blue,
+.purple {
+  padding: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-box-shadow: #2f2b2b 3px 3px 12px;
+  -moz-box-shadow: #2f2b2b 3px 3px 12px;
+  box-shadow: #2f2b2b 3px 3px 12px;
 }
-
-.tabItem {
-  padding: 5px;
-  border-radius: 30px !important;
-}
-
-.colours {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.tooltipTitle {
+  margin-top: 15px !important;
 }

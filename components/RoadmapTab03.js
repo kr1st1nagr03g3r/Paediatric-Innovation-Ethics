@@ -16,35 +16,31 @@ export default function RoadmapTab03() {
         .absolute {
           position: absolute;
         }
-         span.hoverInfo {
-  display: flex;
-}
-span.centerButton {
-  display: none !important;
-}
-          @media only screen and (max-width: 1200px) {
-span.hoverInfo {
-  display: none !important;
-}
-span.centerButton.center {
-  padding: 20px 0px;
-  display: flex !important;
-}
+        span.hoverInfo {
+          display: flex;
+        }
+        span.centerButton {
+          display: none !important;
+        }
+        @media only screen and (max-width: 1200px) {
+          span.hoverInfo {
+            display: none !important;
+          }
+          span.centerButton.center {
+            padding: 20px 0px;
+            display: flex !important;
           }
         }
       `}</style>
       <div>
         <Container className={styles.research}>
           <p>
-            Barriers and roadblocks (depicted by traffic signs and obstructions)
-            represent the challenges and obstacles that potentially hinder the
-            development and commercialization of new drugs. They can be
-            bottlenecks that slow movement along the “road” to a trickle, or
-            broader, more consequential obstructions that bring movement to a
-            grinding halt.
+            The buildings along the road represent the institutional
+            stakeholders involved in the development and commercialization of
+            new drugs.
             <br></br> <br></br>
             <span className="hoverInfo center">
-              <p>Hover over these items to learn more.</p>
+              <p>Click each icon to learn more.</p>
             </span>
             <span className="centerButton center">
               <Button href="/model-overview/drug-discovery">Learn More</Button>
