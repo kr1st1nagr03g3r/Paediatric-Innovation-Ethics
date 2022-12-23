@@ -25,7 +25,7 @@ export default function RoadmapTab00() {
       <style jsx>{`
 
       .imageSize {
-        margin: 30px 120px;
+        margin-top: 60px;
       }
    
    span.hoverInfo {
@@ -62,9 +62,9 @@ span.centerButton.center {
           <span className="hoverInfo center">
             {/* <p>Hover over these items to learn more.</p> */}
           </span>
-          <span className="centerButton center">
+          {/* <span className="centerButton center">
             <Button href="/model-overview/drug-discovery">Learn More</Button>
-          </span>
+          </span> */}
         </Container>
         <div className="imageSize">
           <Box>

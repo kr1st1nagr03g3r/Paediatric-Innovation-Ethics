@@ -74,13 +74,14 @@ export default function Contact() {
                 the University of California, San Francisco.
               </p>
             </div>
-            <div className="half imageCenter">
-              <span>
+            <div className="half imageCenter" >
+              <span >
                 <Image
                   src={Images.Jennifer}
                   width={400}
                   height={400}
                   alt="illustration of Jennifer Fishman"
+                  sx={{ borderRadius: 50, overflow: 'hidden' }}
                 />
               </span>
             </div>
