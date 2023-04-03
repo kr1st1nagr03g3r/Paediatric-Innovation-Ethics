@@ -45,15 +45,6 @@ export default function Contact() {
       {/* JENNIFER */}
       <Container maxWidth={false} disableGutters={true}>
         <Container maxWidth="lg" sx={{ paddingBottom: '60px' }}>
-          <h3 sx={{ color: 'red' }}>
-            Ex veniam nostrud sit amet eiusmod eu labore eu minim nisi
-            adipisicing aliquip irure. Deserunt voluptate proident enim ex esse
-            amet dolor esse exercitation. In pariatur excepteur consectetur est
-            excepteur in laboris ex duis consectetur adipisicing. Quis aliquip
-            qui labore nisi nisi officia deserunt. Eu commodo consequat
-            voluptate dolor incididunt Lorem id aliquip pariatur commodo dolore
-            officia dolore cupidatat.
-          </h3>
           <h4 className="center">Jennifer Fishman, PhD</h4>
           <Container
             sx={{
@@ -83,13 +74,14 @@ export default function Contact() {
                 the University of California, San Francisco.
               </p>
             </div>
-            <div className="half imageCenter">
-              <span>
+            <div className="half imageCenter" >
+              <span >
                 <Image
                   src={Images.Jennifer}
                   width={400}
                   height={400}
                   alt="illustration of Jennifer Fishman"
+                  sx={{ borderRadius: 50, overflow: 'hidden' }}
                 />
               </span>
             </div>
@@ -133,13 +125,11 @@ export default function Contact() {
               </div>
               <div className="half textLeft">
                 <p>
-                  Is a Postdoctoral Researcher in the Department of Social
-                  Studies of Medicine at McGill University. She is interested in
-                  the economic and financial aspects of pharmaceutical and
-                  biotech innovation. Her research focuses broadly on R&D
-                  financing and modeling, risk capital management, new business
-                  ventures, research commercialization, open innovation,
-                  intellectual property and IP valuation. She holds a PhD in
+                  Peggy Chiappetta is a researcher focused on the economic and
+                  financial aspects of pharmaceutical and biotech innovation.
+                  Her interests extend broadly to R&D financing and modeling,
+                  new business development, technology transfer and research
+                  commercialization, and IP valuation. She holds a PhD in
                   Science and Technology Studies from York University and an MA
                   in Science and Technology Studies from the University of
                   British Columbia.
@@ -171,14 +161,14 @@ export default function Contact() {
           >
             <div className="half textLeft">
               <p>
-                Is a Postdoctoral Researcher in the Department of Social Studies
-                of Medicine at McGill University. Her past and current projects
-                focus on knowledge production and implementation in the
-                biomedical sciences. This includes empirical projects on
-                neuroscience, epigenetics, precision and genomic medicine, the
-                return of genetic test results, and palliative and end of life
-                care. She holds a PhD in Science & Technology Studies, Cornell
-                University.
+                Kasia Tolwinski is a researcher and policy analyst specializing
+                in the sociology of science, technology, and medicine. She holds
+                a PhD in Science & Technology Studies from Cornell University.
+                She conducts research on knowledge production and science-based
+                policy in the biomedical and environmental sciences. This
+                includes projects on the social and ethical implications of
+                experimental pediatric brain tumour research, the neuroscience
+                of poverty, epigenetics, and renewable energy.
               </p>
             </div>
             <div className="half imageCenter">
