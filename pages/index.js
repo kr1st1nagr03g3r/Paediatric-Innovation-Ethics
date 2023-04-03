@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div>
         <Head>
-          <title>PBT - Paediatric Brain Tumors</title>
+          <title>PBT - Pediatric Brain Tumors</title>
           <meta
             name="This work models the hypothetical roadmap of pharmaceutical innovation in pediatric neuro-oncology."
             content="PBT"
