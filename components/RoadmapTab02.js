@@ -33,19 +33,19 @@ export default function RoadmapTab02() {
         }
 
            span.hoverInfo {
-  display: flex;
-}
-span.centerButton {
-  display: none !important;
-}
+            display: flex;
+          }
+          span.centerButton {
+            display: none !important;
+          }
           @media only screen and (max-width: 1200px) {
-span.hoverInfo {
-  display: none !important;
-}
-span.centerButton.center {
-  padding: 20px 0px;
-  display: flex !important;
-}
+          span.hoverInfo {
+            display: none !important;
+          }
+          span.centerButton.center {
+            padding: 20px 0px;
+            display: flex !important;
+          }
           }
         }
       `}</style>

@@ -14,17 +14,23 @@ export default function RoadmapTab01() {
         span.hoverInfo {
           display: flex;
         }
-  
 
         @media only screen and (max-width: 1200px) {
    
           span.hoverInfo {
             display: none !important;
+
+            .buttonContainerTabs {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
           }
 
         }
       `}</style>
-
+<div>
       <Container maxWidth="lg">
         <p>
           The colours along the road represent the stages of development that
@@ -35,8 +41,9 @@ export default function RoadmapTab01() {
           stakeholders. <strong>We represent these stages as follows:</strong>
         </p>
         <p>Click each icon to learn more.</p>
-        <div>
+        <div >
           <Container
+            className="buttonContainerTabs"
             maxWidth="lg"
             sx={{
               display: 'flex',
@@ -44,7 +51,6 @@ export default function RoadmapTab01() {
             }}
           >
             {/* //# Tooltips */}
-
             <Tooltip colour="red" text="Drug&nbsp;Discovery" />
             <Tooltip
               colour="orangeGradient"
@@ -69,8 +75,8 @@ export default function RoadmapTab01() {
           alt="green grass background for many buildings"
         />
       </Container>
+      </div>
     </>
   )
 }
-{
-}
+
