@@ -6,9 +6,9 @@ const Images = {
   dataSharing: require('../index/dataSharing.svg').default,
   tab02temp: require('../index/tab02temp.svg').default,
   buildings: require('../index/buildings.svg').default,
-  Jennifer: require('../index/Jennifer.svg').default,
-  Peggy: require('../index/Peggy.svg').default,
-  Kasia: require('../index/Kasia.svg').default,
+  Jennifer: require('../index/Jennifer.png').default,
+  Peggy: require('../index/Peggy.png').default,
+  Kasia: require('../index/Kasia.png').default,
 }
 
 export default Images

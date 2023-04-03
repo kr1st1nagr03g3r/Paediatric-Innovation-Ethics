@@ -83,7 +83,7 @@ export default function BasicTabs() {
             <Tabs
               textColor="inherit"
               value={value}
-              flexContainer={true}
+              // flexcontainer={true}
               variant="scrollable"
               scrollButtons={true}
               allowScrollButtonsMobile={true}
