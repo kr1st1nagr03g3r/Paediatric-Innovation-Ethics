@@ -32,37 +32,37 @@ export default function RoadmapTab01() {
             width: 100%;
           }
            
-            @media only screen and (max-width: 768px) {
-              .stagesAndColours {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .styled {
-                font-size: 12px;
-            }
-            .space {
-              margin: 5px;
-            }
+@media only screen and (max-width: 768px) {
+.stagesAndColours {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+}
+.styled {
+font-size: 12px;
+}
+span.space {
+margin: 5px;
+}
 
-            .spacer {
-              padding: 30px 0px;
-            }
-            }
-  
-              span.hoverInfo {
-                display: flex;
-              }
-            .buttonsPadding {
-              display: flex;
-              flex-wrap: wrap;
-                justify-content: center;
-              }
-              span.space {
-              margin: 15px !important;
-              }
+.spacer {
+padding: 30px 0px;
+}
+}
+
+span.hoverInfo {
+display: flex;
+}
+.buttonsPadding {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+span.space {
+margin: 5px !important;
+}
         
 
         @media only screen and (max-width: 1200px) {
