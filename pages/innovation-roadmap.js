@@ -66,6 +66,11 @@ export default function BasicTabs() {
           font-family: Nunito;
           font-size: 1.25rem;
         }
+
+        .verticalTabs {
+          width: 100%;
+        }
+
       `}</style>
       <Navigation />
 
