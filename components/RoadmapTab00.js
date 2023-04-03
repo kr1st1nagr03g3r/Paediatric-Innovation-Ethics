@@ -24,27 +24,27 @@ export default function RoadmapTab00() {
     <>
       <style jsx>{`
 
-      .imageSize {
-        margin-top: 60px;
-      }
-   
-   span.hoverInfo {
-  display: flex;
-}
-span.centerButton {
-  display: none !important;
-}
-          @media only screen and (max-width: 1200px) {
-span.hoverInfo {
-  display: none !important;
-}
-span.centerButton.center {
-  padding: 20px 0px;
-  display: flex !important;
+.imageSize {
+margin-top: 60px;
 }
 
-          }
-        }
+span.hoverInfo {
+display: flex;
+}
+span.centerButton {
+display: none !important;
+}
+@media only screen and (max-width: 1200px) {
+span.hoverInfo {
+display: none !important;
+}
+span.centerButton.center {
+padding: 20px 0px;
+display: flex !important;
+}
+
+}
+}
       `}</style>
       <div>
         <Container maxWidth="lg">

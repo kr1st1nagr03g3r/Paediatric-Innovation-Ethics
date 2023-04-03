@@ -1,11 +1,11 @@
-import * as React from 'react'
-import styles from '../styles/Research.module.css'
-import Images from '../public/images/research/index'
-import Image from 'next/image'
-import { Box, Button, Container } from '@mui/material'
-import ImageTest from './Barriers'
-import Barriers from './Barriers'
-import Link from 'next/link'
+import * as React from "react";
+import styles from "../styles/Research.module.css";
+import Images from "../public/images/research/index";
+import Image from "next/image";
+import { Box, Button, Container } from "@mui/material";
+import ImageTest from "./Barriers";
+import Barriers from "./Barriers";
+import Link from "next/link";
 
 // const HtmlTooltip = styled(({ className, ...props }) => (
 //   <Tooltip {...props} classes={{ popper: className }} />
@@ -25,121 +25,132 @@ export default function RoadmapTab02() {
   return (
     <>
       <style jsx>{`
-        .relative {
-          position: relative;
-          display: block;
-        }
-        .absolute {
-          position: absolute;
-        }
 
-        span.hoverInfo {
-          display: flex;
-        }
-        span.centerButton {
-          display: none !important;
-        }
-
-        .relative {
-          position: relative;
-        }
-
-        .absolute {
-          position: absolute;
-        }
-
-        .redLink {
-          height: 100px;
-          width: 1000px;
-          z-index: 1000;
-          top: 0;
-          left: 0;
-          position: absolute;
-        }
-
-        .gradientLink {
-          height: 100px;
-          width: 1e3px;
-          z-index: 1000;
-          top: 0;
- 
-          left: 0;
-          position: absolute;
-          margin-top: 198px;
-           
-        }
-.purpleLink {
-    height: 100px;
-  width: 1000px;
-  z-index: 1000;
-  top: 0;
-  left: 0;
- 
-  position: absolute;
-    margin-top: 554px;
+.barriersAndRoadBlocks {
+  width: 100% !important;
 }
 
- .greenLink {
+.relative {
+position: relative;
+display: block;
+}
+.absolute {
+position: absolute;
+}
+
+span.hoverInfo {
+display: flex;
+}
+span.centerButton {
+display: none !important;
+}
+
+.relative {
+position: relative;
+}
+
+.absolute {
+position: absolute;
+}
+
+.redLink {
+height: 100px;
+width: 1000px;
+z-index: 1000;
+top: 0;
+left: 0;
+position: absolute;
+}
+
+.gradientLink {
+height: 100px;
+width: 1e3px;
+z-index: 1000;
+top: 0;
+
+left: 0;
+position: absolute;
+margin-top: 198px;
+
+}
+.purpleLink {
+height: 100px;
+width: 1000px;
+z-index: 1000;
+top: 0;
+left: 0;
+
+position: absolute;
+margin-top: 554px;
+}
+
+.greenLink {
 height: 200px;
 width: 1000px;
-    z-index: 1000;
-    top: 0;
-    left: 0;
+z-index: 1000;
+top: 0;
+left: 0;
 
-    position: absolute;
-    margin-top: 704px;
+position: absolute;
+margin-top: 704px;
 }
 
 .blueLink {
 height: 200px;
-    width: 200px;
-    z-index: 1000;
-    top: 0;
-    left: 0;
+width: 200px;
+z-index: 1000;
+top: 0;
+left: 0;
 
-    position: absolute;
-    margin-top: 312px;
-    margin-left: 738px;
+position: absolute;
+margin-top: 312px;
+margin-left: 738px;
 }
 
 .yellowLink {
-      height: 246px;
-    width: 261px;
+height: 246px;
+width: 261px;
 
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    position: absolute;
-    margin-top: 214px;
-    margin-left: -11px;
+z-index: 1000;
+top: 0;
+left: 0;
+position: absolute;
+margin-top: 214px;
+margin-left: -11px;
 }
 
 .orangeLink {
-    height: 200px;
-    width: 200px;
+height: 200px;
+width: 200px;
 
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    position: absolute;
-       margin-top: 156px;
-    margin-left: 634px;
+z-index: 1000;
+top: 0;
+left: 0;
+position: absolute;
+margin-top: 156px;
+margin-left: 634px;
 }  
-          }
+}
 
-          @media only screen and (max-width: 1200px) {
-            span.hoverInfo {
-              display: none !important;
-            }
-            span.centerButton.center {
-              padding: 20px 0px;
-              display: flex !important;
-            }
-          }
-        }
-      `}</style>
-      <div>
-        <Container maxWidth="lg">
+@media only screen and (max-width: 1200px) {
+span.hoverInfo {
+display: none !important;
+}
+span.centerButton.center {
+padding: 20px 0px;
+display: flex !important;
+}
+
+.barriersAndRoadBlocks {
+  width: 100%;
+    max-width: 1200px;
+}
+}
+}
+`}</style>
+<div>
+        <Container>
+        <div className="barriersAndRoadblocks">
           <p>
             Barriers and roadblocks (depicted by traffic signs and obstructions)
             represent the challenges and obstacles that potentially hinder the
@@ -154,7 +165,7 @@ height: 200px;
           <div className="relative">
             <div className="relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/barriersAndRoadBlocks.png" alt="" width="1080px"></img>
+              <img src="/barriersAndRoadBlocks.png" alt="" width="100%"></img>
               <Link passHref href="/model-overview/drug-discovery">
                 <div className="redLink cursorPointer"></div>
               </Link>
@@ -180,8 +191,9 @@ height: 200px;
               </Link>
             </div>
           </div>
+          </div>
         </Container>
-      </div>
+        </div>
     </>
-  )
+  );
 }

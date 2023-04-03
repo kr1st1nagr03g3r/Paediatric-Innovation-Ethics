@@ -1,8 +1,9 @@
-import * as React from 'react'
-import Images from '../public/images/index'
-import Image from 'next/image'
-import Container from '@mui/material/Container'
-import NextLink from 'next/link'
+import * as React from "react";
+import Images from "../public/images/index";
+import Image from "next/image";
+import Container from "@mui/material/Container";
+import NextLink from "next/link";
+import { Box } from "@mui/material";
 
 export default function RoadmapTab01() {
   return (
@@ -25,21 +26,44 @@ export default function RoadmapTab01() {
             width: max-content;
             height: auto;
             cursor: pointer;
-          
           }
-        .tooltipContainer {
-            width: { sm: '600px', md: '600px', lg: '1200px' }
-        }
-        span.hoverInfo {
-          display: flex;
-        }
-  .buttonsPadding {
-display: flex;
-  }
-span.space {
- margin: 15px !important;
-}
-  }
+
+          .stagesAndColours {
+            width: 100%;
+          }
+           
+            @media only screen and (max-width: 768px) {
+              .stagesAndColours {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .styled {
+                font-size: 12px;
+            }
+            .space {
+              margin: 5px;
+            }
+
+            .spacer {
+              padding: 30px 0px;
+            }
+            }
+  
+              span.hoverInfo {
+                display: flex;
+              }
+            .buttonsPadding {
+              display: flex;
+              flex-wrap: wrap;
+                justify-content: center;
+              }
+              span.space {
+              margin: 15px !important;
+              }
+        
 
         @media only screen and (max-width: 1200px) {
    
@@ -49,7 +73,7 @@ span.space {
 
         }
       `}</style>
-
+      <div className="stagesAndColours">
       <Container maxWidth="lg">
         <p>
           The colours along the road represent the stages of development that
@@ -60,14 +84,13 @@ span.space {
           stakeholders. <strong>We represent these stages as follows:</strong>
         </p>
         <p className="center">Click each button to learn more.</p>
-        <div>
-          <Container
+          <div
             className="spacer"
             maxWidth="lg"
             sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             {/* //# buttons */}
@@ -89,8 +112,8 @@ span.space {
               <NextLink href="/model-overview/pre-clinical" passHref>
                 <button className="styled button yellow">Pre Clinical</button>
               </NextLink>
-            </div>
-            <div className="buttonsPadding">
+              <span className="space"></span>
+
               <NextLink href="/model-overview/ind" passHref>
                 <button className="styled button blue">IND</button>
               </NextLink>
@@ -115,19 +138,17 @@ span.space {
                 </button>
               </NextLink>
             </div>
-          </Container>
-        </div>
+          </div>
       </Container>
-      {/* <Container maxWidth="lg">
+      <Container maxWidth="lg">
         <Image
           src={Images.rainbowRoad}
           width={1150}
           height={900}
           alt="green grass background for many buildings"
         />
-      </Container> */}
-    </>
-  )
-}
-{
+      </Container>
+</div>
+</>
+  );
 }

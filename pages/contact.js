@@ -183,7 +183,7 @@ export default function Contact() {
             </div>
           </Container>
           <div className="centerButton">
-            <Button href="mailto:kasia.tolwinski@mail.mcgill.ca">
+            <Button href="mailto:ket49 @ cornell.edu ">
               Contact
             </Button>
           </div>

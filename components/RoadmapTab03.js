@@ -145,7 +145,7 @@ span.centerButton.center {
           <div className="relative">
             <div className="relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/buildingsInstitutions.png" alt="" width="1080px"></img>
+              <img src="/buildingsInstitutions.png" alt="" width="100%"></img>
               <Link passHref href="/model-overview/drug-discovery">
                 <div className="redLink cursorPointer"></div>
               </Link>
